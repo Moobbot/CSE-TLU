@@ -34,6 +34,7 @@
       rel="stylesheet"
       href="/sites/all/themes/user_theme/assets/css/responsive.css"
     />
+
     <!-- HTML5 element support for IE6-8 -->
     <!--[if lt IE 9]>
       <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
@@ -60,22 +61,47 @@
                   height="70"
                 />
               </a>
-              <form class="d-flex">
-                <input
-                  class="form-control border border-end-0"
-                  type="search"
-                  placeholder="Tìm kiếm"
-                  aria-label="Search"
-                />
-                <span class="input-group-append">
+
+              <div class="d-flex position-relative">
+                <div class="me-3">
+                  <button class="btn">
+                    <img
+                      src="../../sites/all/themes/user_theme/assets/icons/language_icon/vn.png"
+                      alt="..."
+                      height="20"
+                    />
+                  </button>
+
+                  <button class="btn">
+                    <img
+                      src="../../sites/all/themes/user_theme/assets/icons/language_icon/en.png"
+                      alt="..."
+                      height="20"
+                    />
+                  </button>
+                </div>
+                <form>
+                  <input
+                    class="form-control border-2 border-danger rounded-pill"
+                    type="search"
+                    placeholder="Tìm kiếm"
+                    aria-label="Search"
+                  />
+
                   <button
-                    class="btn btn-outline-danger border-start-0 border"
+                    class="btn d-flex position-absolute text-danger"
+                    style="right: 45px; top: 5px"
                     type="button"
                   >
                     <i class="fa fa-search"></i>
                   </button>
-                </span>
-              </form>
+                </form>
+                <div class="ms-2">
+                  <a href="" class="fs-2">
+                    <i class="far fa-user-circle text-danger"></i>
+                  </a>
+                </div>
+              </div>
               <!-- </div>
               </div> -->
             </div>
