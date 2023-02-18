@@ -109,8 +109,8 @@
 
 :root {
 	--primary-color: #ff0000;
-	--secondary-color: FF5733;
-	--secondary-color-2: 004777;
+	--secondary-color: #ff5733;
+	--secondary-color-2: #004777;
 }
 * {
 	margin: 0;

@@ -1,7 +1,123 @@
+html,
+body {
+	min-height: 100vh;
+	display: block;
+	position: relative;
+}
 .d-flex {
 	display: flex;
 }
-/* footer */
+
+/* Header */
+.user-header-top {
+	height: 80px;
+	margin-bottom: 5px;
+}
+.user-header-logo a {
+	display: block;
+}
+.user-header-logo img {
+	height: 80px;
+}
+.language a {
+	display: block;
+	margin-right: 10px;
+}
+.language a:last-child {
+	margin-right: 0;
+}
+.language-container-inner {
+	display: flex;
+}
+.search {
+	position: relative;
+}
+.search input {
+	width: 385px;
+	border-radius: 15px;
+	border-color: var(--secondary-color);
+	margin: 0;
+}
+.search input:focus {
+	border-color: rgba(255, 0, 0, 0.2);
+	box-shadow: 0 0 0 4px rgba(255, 0, 0, 0.25);
+}
+.search .btn-search {
+	width: 30px;
+	height: 30px;
+	border: none;
+	color: var(--secondary-color);
+	font-size: 20px;
+	padding: 0;
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.menu-header {
+	width: 100%;
+	background-color: var(--primary-color);
+	color: #ffffff;
+	font-size: 16px;
+}
+.menu-header-navbar {
+	overflow: unset;
+}
+.menu-header-nav {
+	width: 100%;
+	justify-content: center;
+}
+.menu-header-nav a {
+	color: #ffffff;
+}
+.menu-header-nav a:hover,
+.menu-header-nav a:focus {
+	color: #ffffff;
+	background-color: transparent;
+	scale: 1.05;
+}
+.menu-header-nav ul.menu {
+	width: 100%;
+	justify-content: space-around;
+}
+.menu-header-nav ul.menu > li {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.menu-header-nav ul.menu > li > a {
+	text-transform: uppercase;
+	color: #ffffff;
+	font-weight: 600;
+	padding: 10px 20px;
+}
+.menu-header-nav ul.menu > li > a:hover,
+.menu-header-nav ul.menu > li > a:focus {
+	scale: 1.05;
+}
+.menu-header-nav .dropdown-menu {
+	color: #ffffff;
+	background-color: #ff000085;
+	border-color: #ff000085;
+	opacity: 0.8;
+}
+.user-header-account a {
+	width: 40px;
+	height: 40px;
+	color: var(--primary-color);
+	font-size: 40px;
+	display: flex;
+}
+.user-header-top .language {
+	margin: 0 auto;
+}
+.user-header-top .search {
+	margin-left: auto;
+}
+.user-header-account {
+	margin-left: 10px;
+}
+/* Footer */
 .footer {
 	width: 100%;
 	background-color: var(--primary-color);
@@ -9,7 +125,7 @@
 	font-size: 16px;
 }
 .footer-container-inner {
-	padding-top: 40px;
+	padding-top: 30px;
 }
 .footer a {
 	color: inherit;
