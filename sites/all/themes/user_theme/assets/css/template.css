@@ -1,0 +1,246 @@
+/**================ Alter of Template ================*/
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto/Roboto-Black.woff2') format('woff2'),
+		url('../fonts/Roboto/Roboto-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto/Roboto-Light.woff2') format('woff2'),
+		url('../fonts/Roboto/Roboto-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto/Roboto-Bold.woff2') format('woff2'),
+		url('../fonts/Roboto/Roboto-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto/Roboto-Italic.woff2') format('woff2'),
+		url('../fonts/Roboto/Roboto-Italic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto/Roboto-BlackItalic.woff2') format('woff2'),
+		url('../fonts/Roboto/Roboto-BlackItalic.woff') format('woff');
+	font-weight: 900;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto/Roboto-BoldItalic.woff2') format('woff2'),
+		url('../fonts/Roboto/Roboto-BoldItalic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto/Roboto-Medium.woff2') format('woff2'),
+		url('../fonts/Roboto/Roboto-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto/Roboto-Regular.woff2') format('woff2'),
+		url('../fonts/Roboto/Roboto-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto/Roboto-MediumItalic.woff2') format('woff2'),
+		url('../fonts/Roboto/Roboto-MediumItalic.woff') format('woff');
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto/Roboto-LightItalic.woff2') format('woff2'),
+		url('../fonts/Roboto/Roboto-LightItalic.woff') format('woff');
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto/Roboto-Thin.woff2') format('woff2'),
+		url('../fonts/Roboto/Roboto-Thin.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto/Roboto-ThinItalic.woff2') format('woff2'),
+		url('../fonts/Roboto/Roboto-ThinItalic.woff') format('woff');
+	font-weight: 100;
+	font-style: italic;
+	font-display: swap;
+}
+
+:root {
+	--primary-color: #ff0000;
+	--secondary-color: FF5733;
+	--secondary-color-2: 004777;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.21;
+	background: #ffffff;
+	color: #000000;
+	overflow-x: hidden;
+	text-align: justify;
+}
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+a:hover,
+a:focus {
+	text-decoration: none;
+}
+i {
+	font-style: italic;
+}
+ol,
+ul {
+	list-style: none;
+}
+li {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 600;
+}
+p {
+	padding: 10px 0;
+}
+session,
+nav,
+footer,
+article {
+	overflow: hidden;
+}
+.m0 {
+	margin: 0 !important;
+}
+.mt0 {
+	margin-top: 0px !important;
+}
+.mt5 {
+	margin-top: 5px !important;
+}
+.mt10 {
+	margin-top: 10px !important;
+}
+.mt15 {
+	margin-top: 15px !important;
+}
+.mt20 {
+	margin-top: 20px !important;
+}
+.mt30 {
+	margin-top: 30px !important;
+}
+.mt35 {
+	margin-top: 40px !important;
+}
+.mt40 {
+	margin-top: 35px !important;
+}
+.mb5 {
+	margin-bottom: 5px !important;
+}
+.mb15 {
+	margin-bottom: 15px !important;
+}
+.mb25 {
+	margin-bottom: 25px !important;
+}
+.mr5 {
+	margin-right: 5px !important;
+}
+.mr30 {
+	margin-right: 30px !important;
+}
+
+.p0 {
+	padding: 0 !important;
+}
+.pl0 {
+	padding-left: 0 !important;
+}
+.pr0 {
+	padding-right: 0 !important;
+}
+.pl10 {
+	padding-left: 10px !important;
+}
+.pr10 {
+	padding-right: 10px !important;
+}
+.pl15 {
+	padding-left: 15px !important;
+}
+.pr15 {
+	padding-right: 15px !important;
+}
+.w100 {
+	width: 100% !important;
+}
