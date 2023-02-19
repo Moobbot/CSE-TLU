@@ -1,59 +1,104 @@
 .d-flex {
-	display: flex;
+    display: flex;
 }
+
+/* training */
+.main-left {
+    margin-top: 83px;
+	padding-right: 16px;
+}
+.main-left ul li a {
+	display: block;
+	padding: 20px 12px;
+	background-color: var(--bg-secondary);
+	color: var(--text-dark-color);
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+}
+.main-left ul li a.active {
+	color: var(--text-light-color);
+	background-color: var(--secondary-color);
+}
+.main-right {
+    margin-top: 83px;
+	margin-bottom: 55px;
+	padding-left: 16px;
+	border-left: 1px solid #000000;
+}
+.main-right-title {
+	color: var(--secondary-color);
+}
+.main-right-item {
+    padding: 8px 0px 8px;
+}
+.item-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.item-image {
+    height: 130px;
+}
+.item-title {
+    font-size: 22px;
+    color: var(--secondary-color-2);
+}
+
 /* footer */
 .footer {
-	width: 100%;
-	background-color: var(--primary-color);
-	color: #ffffff;
-	font-size: 16px;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-size: 16px;
 }
 .footer-container-inner {
-	padding-top: 40px;
+    padding-top: 40px;
 }
 .footer a {
-	color: inherit;
+    color: inherit;
 }
 .footer ul {
-	margin-top: 0;
-	margin-left: 0;
-	margin-right: 0;
-	margin-bottom: 10px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
 }
 .footer ul li {
-	list-style-type: disc;
-	margin: 10px 0 0;
+    list-style-type: disc;
+    margin: 10px 0 0;
 }
 .footer ul li:last-child {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 .footer-bottom {
-	margin-top: 30px;
-	margin-left: 0;
-	margin-right: 0;
-	display: flex;
-	align-items: flex-end;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    align-items: flex-end;
 }
 .footer-bottom img {
-	width: 200px;
-	height: 80px;
+    width: 200px;
+    height: 80px;
 }
-.footer-social [class*='icon-'] {
-	width: 30px;
-	height: 30px;
-	font-size: 30px;
-	margin: 0 10px;
+.footer-social [class*="icon-"] {
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    margin: 0 10px;
 }
 .footer-social ul {
-	display: flex;
+    display: flex;
 }
 .footer-social ul li {
-	list-style-type: none;
+    list-style-type: none;
 }
 .footer-bottom-content {
-	border-top: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
 }
 .footer-bottom-content p {
-	padding: 0;
-	font-size: 14px;
+    padding: 0;
+    font-size: 14px;
 }
