@@ -155,19 +155,15 @@ a:focus,
 	height: calc(100vh - 140px);
 	min-height: 600px;
 }
-.banner-container {
-	height: 100%;
-}
-.banner-container-inner {
-	height: 100%;
-}
 .banner-img {
 	width: 100%;
 	height: calc(100vh - 140px);
+	min-height: 600px;
 }
 .banner-img img {
-	height: calc(100vh - 140px);
 	width: auto;
+	height: calc(100vh - 140px);
+	min-height: 600px;
 	object-fit: cover;
 }
 /* Banner */

@@ -9,7 +9,7 @@
 			dots: false,
 			autoHeight: true,
 			autoplay: true,
-			autoplayTimeout: 1500,
+			autoplayTimeout: 2000,  
 			autoplayHoverPause: true,
 		});
 	});
