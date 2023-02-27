@@ -98,7 +98,7 @@
 :root {
     --primary-color: #0a1f77;
     --secondary-color: #c10606;
-    /* --secondary-color-2: ; */
+    --secondary-color-2: rgba(10, 31, 119, 0.8);
 }
 * {
     margin: 0;
@@ -160,6 +160,7 @@ h4,
 h5,
 h6 {
     font-weight: 600;
+    margin: 0;
 }
 p {
     padding: 10px 0;
