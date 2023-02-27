@@ -12,7 +12,7 @@
 /* Css for Tablet & Mobile*/
 @media all and (max-width: 991.8px) {
 	.hidden-md {
-		display: none;
+		display: none !important;
 	}
 }
 /* Css for Tablet &  Mobile*/

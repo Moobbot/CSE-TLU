@@ -89,11 +89,13 @@ a:focus,
 }
 .header-logo {
 	height: 50px;
+	width: 500px;
 	display: flex;
 	align-items: center;
 }
 .header-logo img {
 	height: 100%;
+	max-width: 80px;
 }
 .header-logo .header-title {
 	color: var(--primary-color);
