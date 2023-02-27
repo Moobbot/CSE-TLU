@@ -39,6 +39,8 @@ a:focus,
 	width: 100%;
 	color: #ffffff;
 	font-size: 18px;
+	box-shadow: 0px 1px 4px 0px var(--primary-color);
+	/* left top shadow size color inset */
 }
 .user-header-top {
 	background-color: var(--primary-color);
@@ -112,6 +114,36 @@ a:focus,
 .header-logo .header-title span {
 	font-size: 14px;
 	font-weight: 500;
+}
+.header .btn-search {
+	color: var(--primary-color);
+	background-color: transparent;
+	border: none;
+}
+.header .btn-search:hover {
+	color: var(--secondary-color);
+	scale: 1.1;
+}
+.header .btn-search [class*='icon-'] {
+	margin: 5px;
+}
+.menu-header .navbar-toggler {
+	font-size: 1.5rem;
+	color: var(--primary-color);
+}
+.menu-header a {
+	color: var(--primary-color);
+}
+.menu-header .nav-item a {
+	border-bottom: 2px solid transparent;
+}
+/* .menu-header .nav-item:hover {
+	border-bottom-color: var(--secondary-color);
+} */
+.menu-header .nav-item:hover a,
+.menu-header .nav-item:focus a {
+	color: var(--secondary-color);
+	border-bottom-color: var(--secondary-color);
 }
 /* Header */
 /* Footer */
