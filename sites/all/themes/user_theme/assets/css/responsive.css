@@ -11,6 +11,9 @@
 
 /* Css for Tablet & Mobile*/
 @media all and (max-width: 991.8px) {
+	.hidden-md {
+		display: none !important;
+	}
 }
 /* Css for Tablet &  Mobile*/
 
@@ -59,6 +62,9 @@
 /* Css for 1024*/
 
 @media all and (max-width: 1024px) {
+	.hidden-1024 {
+		display: none;
+	}
 }
 @media all and (min-width: 1024px) and (max-width: 1200px) {
 }
