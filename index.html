@@ -10,6 +10,10 @@
   <link rel="stylesheet" href="./sites/all/themes/user_theme/assets/plugin/bootstrap/bootstrap-5.0.2/css/bootstrap.css">
   <link rel="stylesheet" href="./sites/all/themes/user_theme/assets/plugin/fontawesome/fontawesome5/css/all.min.css">
   <link rel="stylesheet" href="./sites/all/themes/user_theme/assets/plugin/jquery-ui/jquery-ui.css">
+  <link rel="stylesheet"
+    href="./sites/all/themes/user_theme/assets/plugin/OwlCarousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="./sites/all/themes/user_theme/assets/plugin/OwlCarousel/dist/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="./sites/all/themes/user_theme/assets/css/alter.css">
   <link rel="stylesheet" href="./sites/all/themes/user_theme/assets/css/template.css">
   <link rel="stylesheet" href="./sites/all/themes/user_theme/assets/css/style.css">
@@ -20,96 +24,104 @@
   <script src="./sites/all/themes/user_theme/assets/javascript/jquery.min.js"></script>
   <script src="./sites/all/themes/user_theme/assets/plugin/bootstrap/bootstrap-5.0.2/js/bootstrap.js"></script>
   <script src="./sites/all/themes/user_theme/assets/plugin/jquery-ui/jquery-ui.js"></script>
+  <script src="./sites/all/themes/user_theme/assets/plugin/OwlCarousel/dist/owl.carousel.min.js"></script>
   <script src="./sites/all/themes/user_theme/assets/javascript/javascript.js"></script>
 </head>
 
-<body class="page-name">
+<body class="page-home">
   <div class="wrapper">
     <div class="wrapper-container">
       <header id="user-header" class="header">
-        <div class="user-header-container">
-          <div class="user-header-container-inner">
-            <div class="user-header-top container">
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="user-header-logo">
-                  <a href="">
-                    <img src="./sites/default/files/logo-full.png" alt="">
-                  </a>
-                </div>
-                <div class="language">
-                  <div class="language-container">
-                    <div class="language-container-inner">
-                      <a href=""><img src="./sites/default/files/vn.png" alt=""></a>
-                      <a href=""><img src="./sites/default/files/eng.png" alt=""></a>
-                    </div>
+        <div class="header-container">
+          <div class="header-container-inner">
+            <div class="user-header-top hidden-md">
+              <div class="header-top-container container">
+                <div class="left d-flex">
+                  <div class="div-email"><a href="mailto:vpkcntt@tlu.edu.vn"><i
+                        class="icon-envelope far fa-envelope"></i>vpkcntt@tlu.edu.vn</a></div>
+                  <div class="div-phone">
+                    <a href="tel:8402435632211"><i class="icon-alt fas fa-phone"></i>(+84)-024 3 5632211</a>
                   </div>
                 </div>
-                <div class="search">
-                  <form>
-                    <input class="form-control" type="search" placeholder="Tìm kiếm..." aria-label="Search">
-                    <button class="btn btn-search" type="submit"><i class="fas fa-search"></i></button>
-                  </form>
+                <div class="middle hidden-1024">
+                  <p>Khoa công nghệ thông tin Đại học Thủy Lợi</p>
                 </div>
-                <div class="user-header-account">
-                  <a href=""><i class="fas fa-user-circle"></i></a>
+                <div class="right d-flex">
+                  <div class="login"><a href="">Đăng nhập</a></div>
+                  <div class="language">
+                    <div class="language-container">
+                      <div class="language-container-inner">
+                        <div class="dropdown">
+                          <a class="btn dropdown-toggle" href="" role="button" id="btn-language"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Ngôn ngữ
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="btn-language">
+                            <li>
+                              <a class="dropdown-item" href="?vn"><img src="./sites/default/files/vn.png" alt=""></a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="?en"><img src="./sites/default/files/eng.png" alt=""></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contact">
+                    <a href="">Liên hệ</a>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="user-header-bottom menu-header">
               <div class="menu-header-container container">
-                <nav class="navbar navbar-expand-lg menu-header-navbar">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
                   <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <a class="navbar-brand" href="#">
+                      <div class="header-logo">
+                        <img src="./sites/default/files/logo/CSE_logo.png" alt="">
+                        <div class="header-title">
+                          <h3>Khoa công nghệ thông tin</h3>
+                          <span>Faculty of Computer Science and Engineering - Thuyloi University</span>
+                        </div>
+                      </div>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                      aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse menu-header-nav" id="navbarNav">
-                      <ul class="navbar-nav menu">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="dr-1" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">Giới thiệu</a>
-                          <ul class="dropdown-menu" aria-labelledby="dr-1">
-                            <li><a class="dropdown-item" href="#">Giới thiệu chung</a></li>
-                            <li><a class="dropdown-item" href="#">Bộ môn hệ thống thông tin</a></li>
-                            <li><a class="dropdown-item" href="#">Bộ môn kĩ thuật phần mềm</a></li>
-                            <li><a class="dropdown-item" href="#">Bộ môn trí tuệ nhân tạo</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="dr-2" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">Đào tạo</a>
-                          <ul class="dropdown-menu" aria-labelledby="dr-2">
-                            <li><a class="dropdown-item" href="#">Đại học chính quy</a></li>
-                            <li><a class="dropdown-item" href="#">Thạc sĩ</a></li>
-                            <li><a class="dropdown-item" href="#">Tiến sĩ</a></li>
-                          </ul>
+                          <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Nghiên cứu khoa học</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Doanh nghiệp</a>
+                          <a class="nav-link" href="#">Link</a>
                         </li>
                         <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="dr-3" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">Tuyển sinh</a>
-                          <ul class="dropdown-menu" aria-labelledby="dr-3">
-                            <li><a class="dropdown-item" href="#">Tuyển sinh Đại học</a></li>
-                            <li><a class="dropdown-item" href="#">Tuyển sinh Thạc sĩ</a></li>
-                            <li><a class="dropdown-item" href="#">Tuyển sinh Tiến sĩ</a></li>
-                            <li><a class="dropdown-item" href="#">Vừa học vừa làm</a></li>
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
                           </ul>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Sinh viên</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Liên hệ</a>
+                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                         </li>
                       </ul>
+                      <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
                     </div>
                   </div>
                 </nav>
@@ -117,165 +129,22 @@
             </div>
           </div>
         </div>
-      </header>
-      <div class="main-wrapper">
-        <div class="main">
-          <div class="main-content">
-            <div class="main-content-container">
-              <div class="main-content-container-inner">
-                <div class="banner">
-                  <div class="banner-container">
-                    <div class="banner-container-inner">
-                      <img src="./sites/default/files/banner1.jpg" alt="" class="w-100">
-                    </div>
-                  </div>
-
-                </div>
-                <div class="thongbao_skien my30">
-                  <div class="thongbao_skien-container container">
-                    <div class="thongbao_skien-container-inner">
-                      <div class="title-style-1">
-                        <h2>Thông báo & sự kiện</h2>
-                        <hr>
+    </div>
+    </header>
+    <div class="main-wrapper">
+      <div class="main">
+        <div class="main-content">
+          <div class="main-content-container">
+            <div class="main-content-container-inner">
+              <div class="banner d-none">
+                <div class="banner-container">
+                  <div class="banner-container-inner">
+                    <div class="owl-carousel banner-carousel">
+                      <div class="banner-img">
+                        <img src="./sites/default/files/banner1.jpg" alt="" class="">
                       </div>
-                      <div class="thongbao_skien-content">
-                        <ul class="row thongbao_skien-list">
-                          <li class="col-md-4">
-                            <div class="card card-style-1">
-                              <div class="card-body">
-                                <div class="card-time">
-                                  <ul>
-                                    <li class="day">01</li>
-                                    <li class="month-year">02/2023</li>
-                                  </ul>
-                                </div>
-                                <h5 class="card-title">Thông báo lịch công tác tháng 2 bộ môn trí tuệ nhân tạo</h5>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="col-md-4">
-                            <div class="card card-style-1">
-                              <div class="card-body">
-                                <div class="card-time">
-                                  <ul>
-                                    <li class="day">01</li>
-                                    <li class="month-year">02/2023</li>
-                                  </ul>
-                                </div>
-                                <h5 class="card-title">Thông báo lịch công tác tháng 2 bộ môn trí tuệ nhân tạo</h5>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="col-md-4">
-                            <div class="card card-style-1">
-                              <div class="card-body">
-                                <div class="card-time">
-                                  <ul>
-                                    <li class="day">01</li>
-                                    <li class="month-year">02/2023</li>
-                                  </ul>
-                                </div>
-                                <h5 class="card-title">Thông báo lịch công tác tháng 2 bộ môn trí tuệ nhân tạo</h5>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="col-md-4">
-                            <div class="card card-style-1">
-                              <div class="card-body">
-                                <div class="card-time">
-                                  <ul>
-                                    <li class="day">01</li>
-                                    <li class="month-year">02/2023</li>
-                                  </ul>
-                                </div>
-                                <h5 class="card-title">Thông báo lịch công tác tháng 2 bộ môn trí tuệ nhân tạo</h5>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="col-md-4">
-                            <div class="card card-style-1">
-                              <div class="card-body">
-                                <div class="card-time">
-                                  <ul>
-                                    <li class="day">01</li>
-                                    <li class="month-year">02/2023</li>
-                                  </ul>
-                                </div>
-                                <h5 class="card-title">Thông báo lịch công tác tháng 2 bộ môn trí tuệ nhân tạo</h5>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="col-md-4">
-                            <div class="card card-style-1">
-                              <div class="card-body">
-                                <div class="card-time">
-                                  <ul>
-                                    <li class="day">01</li>
-                                    <li class="month-year">02/2023</li>
-                                  </ul>
-                                </div>
-                                <h5 class="card-title">Thông báo lịch công tác tháng 2 bộ môn trí tuệ nhân tạo</h5>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="hoatdong my30">
-                  <div class="hoatdong-container container">
-                    <div class="hoatdong-container-inner">
-                      <div class="title-style-1">
-                        <h2>Thông báo & sự kiện</h2>
-                        <hr>
-                      </div>
-                      <div class="hoatdong-content">
-                        <ul class="row">
-                          <li class="col-md-3">
-                            <div class="card card-style-2 bg-dark text-white">
-                              <img src="./sites/default/files/MQP_0051.JPG" class="card-img" alt="...">
-                              <div class="card-img-overlay">
-                                <div class="card-title-wrap">
-                                  <h5 class="card-title">Văn nghệ khoa</h5>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="col-md-3">
-                            <div class="card card-style-2 bg-dark text-white">
-                              <img src="./sites/default/files/MQP_0051.JPG" class="card-img" alt="...">
-                              <div class="card-img-overlay">
-                                <div class="card-title-wrap">
-                                  <h5 class="card-title">Văn nghệ khoa</h5>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="col-md-3">
-                            <div class="card card-style-2 bg-dark text-white">
-                              <img src="./sites/default/files/MQP_0051.JPG" class="card-img" alt="...">
-                              <div class="card-img-overlay">
-                                <div class="card-title-wrap">
-                                  <h5 class="card-title">Văn nghệ khoa</h5>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="col-md-3">
-                            <div class="card card-style-2 bg-dark text-white">
-                              <img src="./sites/default/files/MQP_0051.JPG" class="card-img" alt="...">
-                              <div class="card-img-overlay">
-                                <div class="card-title-wrap">
-                                  <h5 class="card-title">Văn nghệ khoa</h5>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                        <div class="btn-wrap">
-                          <a class="btn btn-showmore">Xem thêm <i class="fas fa-arrow-right"></i></a>
-                        </div>
+                      <div class="banner-img">
+                        <img src="./sites/default/files/banner2.jpg" alt="" class="">
                       </div>
                     </div>
                   </div>
@@ -285,117 +154,12 @@
           </div>
         </div>
       </div>
-      <footer id="footer" class="footer">
-        <div class="footer-container container">
-          <div class="footer-container-inner">
-            <div class="footer-top row">
-              <div class="col-md-3">
-                <ul>
-                  <li>
-                    <a href="">Giới thiệu</a>
-                  </li>
-                  <li>
-                    <a href="">Logo khoa CNTT</a>
-                  </li>
-                  <li>
-                    <a href="">Lời chào mừng</a>
-                  </li>
-                  <li>
-                    <a href="">Tổ chức</a>
-                  </li>
-                  <li>
-                    <a href="">Hợp tác liên kết</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-md-3">
-                <ul>
-                  <li>
-                    <a href="">Giới thiệu</a>
-                  </li>
-                  <li>
-                    <a href="">Logo khoa CNTT</a>
-                  </li>
-                  <li>
-                    <a href="">Lời chào mừng</a>
-                  </li>
-                  <li>
-                    <a href="">Tổ chức</a>
-                  </li>
-                  <li>
-                    <a href="">Hợp tác liên kết</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-md-3">
-                <ul>
-                  <li>
-                    <a href="">Giới thiệu</a>
-                  </li>
-                  <li>
-                    <a href="">Logo khoa CNTT</a>
-                  </li>
-                  <li>
-                    <a href="">Lời chào mừng</a>
-                  </li>
-                  <li>
-                    <a href="">Tổ chức</a>
-                  </li>
-                  <li>
-                    <a href="">Hợp tác liên kết</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-md-3">
-                <ul>
-                  <li>
-                    <a href="">Giới thiệu</a>
-                  </li>
-                  <li>
-                    <a href="">Logo khoa CNTT</a>
-                  </li>
-                  <li>
-                    <a href="">Lời chào mừng</a>
-                  </li>
-                  <li>
-                    <a href="">Tổ chức</a>
-                  </li>
-                  <li>
-                    <a href="">Hợp tác liên kết</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="footer-bottom row">
-              <div class="footer-bottom-img col-2">
-                <img src="./sites/default/files/school.png" alt="">
-              </div>
-              <div class="footer-bottom-content col-8">
-                <div class="copyright">
-                  <p>© 2023 Khoa Công nghệ thông tin - Đại học Thủy lợi</p>
-                </div>
-                <div class="address">
-                  <p>Địa chỉ: nhà C1, Đại học Thủy lợi, 175 Tây Sơn, Đống Đa, Hà Nội. Điện thoại: (+84)-024 3 5632211.
-                    Email: vpkcntt@tlu.edu.vn</p>
-                </div>
-              </div>
-              <div class="footer-social col-2">
-                <ul>
-                  <li>
-                    <a href=""><i class="icon-facebook fab fa-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="icon-youtube fab fa-youtube"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="icon-twitter fab fa-twitter"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-      </footer>
     </div>
+    <footer id="footer" class="footer">
+      <div class="footer-container container">
+        <div class="footer-container-inner"></div>
+    </footer>
+  </div>
   </div>
 </body>
 
