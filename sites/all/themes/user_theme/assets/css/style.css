@@ -10,6 +10,10 @@ body {
 .pt30 {
 	padding-top: 30px;
 }
+.px20 {
+	padding-left: 20px;
+	padding-right: 20px;
+}
 .py30 {
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -31,13 +35,28 @@ a:focus,
 	color: var(--secondary-color);
 	box-shadow: none;
 }
+.br-bottom {
+	padding-bottom: 10px;
+	border-bottom: 1px solid var(--secondary-color);
+}
 /** ------------------------------------ **/
+body::-webkit-scrollbar {
+	width: 5px;
+}
 
+body::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: darkgrey;
+	outline: 1px solid slategrey;
+}
 /* Header */
 .header {
 	min-height: 1px;
 	width: 100%;
-	color: #ffffff;
+	color: #fefefe;
 	font-size: 18px;
 	box-shadow: 0px 1px 4px 0px var(--primary-color);
 	/* left top shadow size color inset */
@@ -51,7 +70,7 @@ a:focus,
 	align-items: center;
 }
 .user-header-top a {
-	color: #ffffff;
+	color: #fefefe;
 	font-family: Roboto;
 	font-size: 18px;
 	padding: 6px 12px;
@@ -147,6 +166,34 @@ a:focus,
 }
 /* Header */
 /* Footer */
+.footer {
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	margin-top: 50px;
+	padding: 20px 0;
+	color: #fefefe;
+	background-color: var(--primary-color);
+	transition: all 0.5s ease-in-out;
+}
+.footer a {
+	color: #fefefe;
+	font-size: 16px;
+}
+.footer ul {
+	padding-left: 0;
+	margin-bottom: 0;
+}
+.footer ul li {
+	padding: 10px 0;
+}
+.footer-phone {
+	padding: 15px 0;
+}
+.footer-title {
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
 /* Footer */
 /* Banner */
 .banner {
@@ -161,9 +208,10 @@ a:focus,
 	min-height: 600px;
 }
 .banner-img img {
-	width: auto;
-	height: calc(100vh - 140px);
-	min-height: 600px;
+	width: 100%;
+	height: 100%;
+	/* height: calc(100vh - 140px);
+	min-height: 600px; */
 	object-fit: cover;
 }
 /* Banner */

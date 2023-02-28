@@ -111,6 +111,7 @@
 	--primary-color: #0a1f77;
 	--secondary-color: #c10606;
 	/* --secondary-color-2: ; */
+	--orange: #ff7300;
 }
 * {
 	margin: 0;
