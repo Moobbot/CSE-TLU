@@ -6,11 +6,18 @@
 }
 /* Css for PC only*/
 @media all and (min-width: 992px) {
+	.br-bottom-md {
+		border-bottom: 1px solid var(--secondary-color);
+		margin-bottom: 10px;
+	}
 }
 /* Css for PC only*/
 
 /* Css for Tablet & Mobile*/
 @media all and (max-width: 991.8px) {
+	.hidden-md {
+		display: none !important;
+	}
 }
 /* Css for Tablet &  Mobile*/
 
@@ -59,6 +66,9 @@
 /* Css for 1024*/
 
 @media all and (max-width: 1024px) {
+	.hidden-1024 {
+		display: none;
+	}
 }
 @media all and (min-width: 1024px) and (max-width: 1200px) {
 }
@@ -84,6 +94,13 @@
 @-moz-document url-prefix() {
 }
 @media (max-width: 992px) {
+	/* .footer-title.br-bottom {
+		border-color: transparent;
+	} */
+	.br-bottom-xs {
+		border-bottom: 1px solid var(--secondary-color);
+		margin-bottom: 10px;
+	}
 }
 @media screen and (max-width: 1040px) and (min-width: 992px) {
 }
