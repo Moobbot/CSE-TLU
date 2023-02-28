@@ -1,3 +1,220 @@
+html,
+body {
+	min-height: 100vh;
+	display: block;
+	position: relative;
+}
+.d-flex {
+	display: flex;
+}
+.pt30 {
+	padding-top: 30px;
+}
+.px20 {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.py30 {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.my30 {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+[class*='icon-'] {
+	margin-right: 5px;
+}
+.icon-alt {
+	transform: rotate(90deg);
+}
+a:hover,
+a:focus,
+.btn:hover,
+.btn:focus {
+	color: var(--secondary-color);
+	box-shadow: none;
+}
+.br-bottom {
+	padding-bottom: 10px;
+	border-bottom: 1px solid var(--secondary-color);
+}
+/** ------------------------------------ **/
+body::-webkit-scrollbar {
+	width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: darkgrey;
+	outline: 1px solid slategrey;
+}
+/* Header */
+.header {
+	min-height: 1px;
+	width: 100%;
+	color: #fefefe;
+	font-size: 18px;
+	box-shadow: 0px 1px 4px 0px var(--primary-color);
+	/* left top shadow size color inset */
+}
+.user-header-top {
+	background-color: var(--primary-color);
+}
+.user-header-top .header-top-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.user-header-top a {
+	color: #fefefe;
+	font-family: Roboto;
+	font-size: 18px;
+	padding: 6px 12px;
+}
+.user-header-top a::after {
+	display: none;
+}
+.user-header-top a:hover,
+.user-header-top a:focus {
+	color: var(--secondary-color);
+}
+.user-header-top .left,
+.user-header-top .right {
+	display: flex;
+	align-items: center;
+}
+/* .div-email,
+.div-phone {
+	margin: 0 5px;
+} */
+.language .dropdown .dropdown-menu {
+	height: 0;
+	transition: height 0.5s ease;
+	padding: 0;
+	min-width: 150px;
+	left: -20%;
+}
+.language .dropdown:hover .dropdown-menu {
+	height: 40px;
+	display: flex;
+	justify-content: space-evenly;
+	/* background-color: #e0e0e0; */
+}
+.language .dropdown .dropdown-menu a:hover {
+	background-color: transparent;
+	scale: 1.1;
+}
+.header-logo {
+	height: 50px;
+	width: 500px;
+	display: flex;
+	align-items: center;
+}
+.header-logo img {
+	height: 100%;
+	max-width: 80px;
+}
+.header-logo .header-title {
+	color: var(--primary-color);
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 10px;
+}
+.header-logo .header-title h3 {
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin: 0;
+}
+.header-logo .header-title span {
+	font-size: 14px;
+	font-weight: 500;
+}
+.header .btn-search {
+	color: var(--primary-color);
+	background-color: transparent;
+	border: none;
+}
+.header .btn-search:hover {
+	color: var(--secondary-color);
+	scale: 1.1;
+}
+.header .btn-search [class*='icon-'] {
+	margin: 5px;
+}
+.menu-header .navbar-toggler {
+	font-size: 1.5rem;
+	color: var(--primary-color);
+}
+.menu-header a {
+	color: var(--primary-color);
+}
+.menu-header .nav-item a {
+	border-bottom: 2px solid transparent;
+}
+/* .menu-header .nav-item:hover {
+	border-bottom-color: var(--secondary-color);
+} */
+.menu-header .nav-item:hover a,
+.menu-header .nav-item:focus a {
+	color: var(--secondary-color);
+	border-bottom-color: var(--secondary-color);
+}
+/* Header */
+/* Footer */
+.footer {
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	margin-top: 50px;
+	padding: 20px 0;
+	color: #fefefe;
+	background-color: var(--primary-color);
+	transition: all 0.5s ease-in-out;
+}
+.footer a {
+	color: #fefefe;
+	font-size: 16px;
+}
+.footer ul {
+	padding-left: 0;
+	margin-bottom: 0;
+}
+.footer ul li {
+	padding: 10px 0;
+}
+.footer-phone {
+	padding: 15px 0;
+}
+.footer-title {
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+/* Footer */
+/* Banner */
+.banner {
+	position: relative;
+	width: 100%;
+	height: calc(100vh - 140px);
+	min-height: 600px;
+}
+.banner-img {
+	width: 100%;
+	height: calc(100vh - 140px);
+	min-height: 600px;
+}
+.banner-img img {
+	width: 100%;
+	height: 100%;
+	/* height: calc(100vh - 140px);
+	min-height: 600px; */
+	object-fit: cover;
+}
+/* content */
 .btn-text {
     font-size: 16px;
     color: var(--secondary-color);
