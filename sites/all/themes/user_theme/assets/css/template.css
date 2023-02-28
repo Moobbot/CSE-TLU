@@ -108,12 +108,11 @@
 }
 
 :root {
+	--primary-color: #0A1F77;
+	--secondary-color: #C50227;
+	--bg-secondary: #D9D9D9;
 	--text-light-color: #ffffff;
 	--text-dark-color: #000000;
-	--primary-color: #ff0000;
-	--secondary-color: #FF5733;
-	--secondary-color-2: #004777;
-	--bg-secondary: #D9D9D9;
 }
 * {
 	margin: 0;

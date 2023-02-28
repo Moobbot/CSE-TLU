@@ -51,9 +51,8 @@ Trang chủ Index.html
 
 <== Màu ==>
 :root {
-	--primary-color: #FF0000;
-	--secondary-color: FF5733;
-	--secondary-color-2: 004777;
+	--primary-color: #0A1F77;
+	--secondary-color: #C50227;
 }
 <== Màu ==>
 
