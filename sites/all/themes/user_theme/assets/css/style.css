@@ -353,8 +353,7 @@ body::-webkit-scrollbar-thumb {
 .card-news-style-2 a {
 	display: block;
 }
-.card-news-style-2 img {
-}
+/* .card-news-style-2 img {} */
 .card-news-style-2 .card-body {
 	padding: 0 10px 10px;
 }
