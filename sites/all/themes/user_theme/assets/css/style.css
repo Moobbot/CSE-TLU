@@ -7,18 +7,18 @@ body {
 .d-flex {
 	display: flex;
 }
-.pt30 {
+.pt-30 {
 	padding-top: 30px;
 }
-.px20 {
+.px-20 {
 	padding-left: 20px;
 	padding-right: 20px;
 }
-.py30 {
+.py-30 {
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
-.my30 {
+.my-30 {
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
@@ -39,6 +39,37 @@ a:focus,
 	padding-bottom: 10px;
 	border-bottom: 1px solid var(--secondary-color);
 }
+.fw-700 {
+	font-weight: 700;
+}
+.text-note-muted {
+	padding-top: 0;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #6c757d !important;
+}
+/* btn, button */
+.btn-secondary {
+	color: var(--secondary-color);
+	background-color: transparent;
+	border: none;
+	position: relative;
+	float: right;
+	clear: both;
+	font-weight: 700;
+}
+.btn-secondary::after {
+	content: '\27A8';
+	margin-left: 2px;
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+	background-color: var(--secondary-color);
+	color: #fefefe;
+}
+/* btn, button */
+
 /** ------------------------------------ **/
 body::-webkit-scrollbar {
 	width: 5px;
@@ -170,7 +201,7 @@ body::-webkit-scrollbar-thumb {
 	position: relative;
 	width: 100%;
 	min-height: 1px;
-	margin-top: 50px;
+	margin-top: 30px;
 	padding: 20px 0;
 	color: #fefefe;
 	background-color: var(--primary-color);
@@ -195,6 +226,57 @@ body::-webkit-scrollbar-thumb {
 	margin-bottom: 10px;
 }
 /* Footer */
+/* style */
+.title-style-1 {
+	color: var(--primary-color);
+	text-align: left;
+	margin-bottom: 20px;
+}
+.title-style-1 h3 {
+	font-size: 24px;
+	margin: 0;
+}
+/* style */
+/* --------------------------------- */
+.card-style-1 {
+	max-height: 300px;
+	position: relative;
+	display: flex;
+	flex-direction: unset;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: #fff;
+	background-clip: border-box;
+	border: none;
+	border-radius: 0;
+}
+.card-style-1 .card-img {
+	height: 100%;
+}
+.card-style-1 img {
+	height: 100%;
+	/* object-fit: cover; */
+}
+.card-style-1 .card-left {
+	width: 40%;
+}
+.card-style-1 .card-right {
+	width: 60%;
+	color: #fefefe;
+	background-color: var(--primary-color);
+	padding: 30px;
+}
+.card-style-1 .card-right h3 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.card-style-1 .card-right p {
+	text-align: justify;
+	font-size: 18px;
+}
+.card-style-1 .card-right .card-detail {
+	margin: auto 0;
+}
 /* Banner */
 .banner {
 	position: relative;
@@ -215,3 +297,112 @@ body::-webkit-scrollbar-thumb {
 	object-fit: cover;
 }
 /* Banner */
+/* partner */
+.partner-img {
+	width: 200px;
+	height: auto;
+}
+.partner-detail {
+	margin: 30px 0 10px;
+}
+/* partner */
+/* block-news */
+.news-detail {
+	margin: 30px 0 10px;
+}
+/* block-news */
+
+/* card-news */
+.card-news .card-title a {
+	color: #0a0a0a;
+}
+.card-news .card-title a:hover,
+.card-news .card-title a:focus {
+	color: var(--secondary-color);
+}
+.card-news .card-text {
+	text-align: justify;
+}
+/* card-news */
+.list-news {
+	position: relative;
+	display: flex;
+	margin: 0;
+}
+.list-news .list-news-item {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.list-news .list-news-item:last-child,
+.list-news .list-news-item:nth-last-child(2) {
+	margin-bottom: 0;
+}
+/* card-news-style-1 */
+.card-news-style-1 {
+	position: relative;
+	background-clip: border-box;
+	border: none;
+}
+/* card-news-style-1 */
+/* card-news-style-2 */
+.card-news-style-2 {
+	position: relative;
+	background-clip: border-box;
+	border: none;
+}
+.card-news-style-2 a {
+	display: block;
+}
+.card-news-style-2 img {
+}
+.card-news-style-2 .card-body {
+	padding: 0 10px 10px;
+}
+.card-news-style-2 .card-title {
+	font-size: 18px;
+	font-weight: 700;
+}
+.card-news-style-2 .card-title a {
+	color: var(--primary-color);
+	text-align: left;
+}
+/* card-news-style-2 */
+
+/* notification */
+.notification-card {
+	border: none;
+}
+.notification-card .card-body {
+	padding: 0;
+}
+.notification-card .card-detail {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+.notification-card .card-img {
+	height: 100px;
+}
+.notification-card .card-time {
+	display: flex;
+	height: 100%;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-right: 10px;
+}
+.notification-card .card-time ul {
+	padding: 0 5px;
+	margin: 0;
+}
+.notification-card .card-time .date {
+	font-size: 30px;
+	color: var(--secondary-color);
+	text-align: center;
+}
+.notification-card .card-time .month {
+	font-size: 26px;
+	color: var(--primary-color);
+	padding-bottom: 5px;
+	border-bottom: 4px solid var(--secondary-color);
+}
+/* notification */
