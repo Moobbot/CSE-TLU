@@ -39,7 +39,16 @@
 			autoplayHoverPause: true,
 		});
 		// carousel
-
+		$('.menu-header .dropdown').hover(
+			function () {
+				// over
+				$(this).find('.dropdown-menu').fadeIn();
+			},
+			function () {
+				// out
+				$(this).find('.dropdown-menu').fadeOut();
+			},
+		);
 		// Footer
 		$('.footer-title').click(function (e) {
 			// $(this).siblings('.footer-detail').toggleClass('open');
