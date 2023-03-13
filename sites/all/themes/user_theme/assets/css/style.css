@@ -11,6 +11,14 @@ a:focus,
     color: var(--secondary-color);
     box-shadow: none;
 }
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    margin-top: 20px;
+}
 .btn-text {
     font-size: 16px;
     color: var(--secondary-color);
@@ -130,133 +138,120 @@ a:focus,
 }
 /* Banner */
 
+/* Section Start: Introduce and Admission */
+.section-container {
+    margin: 0;
+}
+.section-container-content {
+    background-color: #d9d9d9;
+    padding: 24px 45px;
+}
+.section-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.section-icon {
+    width: 44px;
+    height: 44px;
+}
+.section-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: 12px;
+}
+.section-paraph {
+    font-size: 18px;
+    color: var(--text-light-black-color);
+}
+.section-container-image {
+    padding: 0;
+}
+.section-image {
+    width: 100%;
+}
+/* Section End */
+
 /* Introduce */
+.breadcrumbs-container {
+    padding-top: 40px;
+}
 .breadcrumbs-inner {
     display: flex;
     flex-direction: row;
-    margin-top: 40px;
 }
 .breadcrumbs-inner li {
 }
 .breadcrumbs-inner li a {
-    color: black;
     font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
 }
 .breadcrumbs-inner li i {
     margin-right: 10px;
     margin-left: 8px;
-    color: var(--primary-color);
+    color: rgba(0, 0, 0, 0.5);
     font-size: small;
 }
 .breadcrumbs-inner .active {
-    color: #0a1f77;
+    color: var(--primary-color);
     font-size: 16px;
 }
 
 .devel-history-inner {
-    margin-top: 56px;
-}
-.devel-history-wrapper {
-    margin-left: 32px;
+    padding-top: 40px;
 }
 .devel-history-title {
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 700;
     width: fit-content;
-    padding-bottom: 12px;
+    padding-bottom: 15px;
     border-bottom: var(--secondary-color) 4px solid;
 }
 .devel-history-text {
     font-size: 20px;
-    text-align: left;
+    color: var(--text-light-black-color);
+    /* text-align: left; */
 }
-.button-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: end;
-    margin-top: 16px;
-}
-.statistics-inner {
+
+.philosophy-inner {
     margin-top: 32px;
-    padding: 0 52px;
-    background-color: var(--secondary-color-2);
-    justify-content: space-around;
-    align-items: center;
+    padding: 0 35px;
+    background-color: var(--bg-secondary-color);
 }
-.statistics-item {
+.philosophy-item {
     display: flex;
     flex-direction: column;
-    padding: 120px 0px;
+    padding: 120px 25px;
 }
-.statistics-title {
-    font-size: 22px;
+.philosophy-title {
+    font-size: 30px;
     color: white;
-    text-align: center;
-    font-weight: 400;
-}
-.statistics-number {
-    font-size: 36px;
-    color: white;
-    text-align: center;
     font-weight: 700;
 }
-.statistics-paraph {
+.philosophy-paraph {
     font-size: 16px;
     color: white;
-    text-align: center;
     font-weight: 400;
-    padding-left: 24px;
-    padding-right: 24px;
 }
-.structure-container-left {
-    background-color: #D9D9D9;
-    padding: 54px 60px;
-}
-.structure-icon {
-    width: 44px;
-    height: 44px;
-}
-.structure-title {
-    font-size: 40px;
-    font-weight: 700;
-    margin-top: 12px;
+
+.structure-item {
+    margin-bottom: 16px;
 }
 .structure-item-title {
     font-size: 16px;
     font-weight: 700;
-    margin: 20px 0 10px;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
 }
 .structure-item-paraph {
     font-size: 16px;
     font-weight: 400;
+    color: var(--text-light-black-color);
     padding: 0;
     margin-bottom: 6px;
 }
 .structure-wrapper-right {
-    margin-top: 110px;
+    padding: 48px 32px 0 32px;
 }
-.structure-wrapper-right {
-    padding-right: 32px;
-}
-.lecturers-container-left {
-    padding: 0;
-}
-.lecturers-image {
-    width: 100%;
-}
-.lecturers-container-right {
-    background-color: #D9D9D9;
-    padding:44px 60px;
-}
-.lecturers-icon {
-    width: 44px;
-    height: 44px;
-}
-.lecturers-title {
-    font-size: 40px;
-    font-weight: 700;
-    margin-top: 12px;
-}
-
 /* Introduce */

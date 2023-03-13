@@ -99,6 +99,8 @@
     --primary-color: #0a1f77;
     --secondary-color: #c10606;
     --secondary-color-2: rgba(10, 31, 119, 0.8);
+    --bg-secondary-color: rgba(193, 6, 6, 0.8);
+    --text-light-black-color: rgba(0, 0, 0, 0.8);
 }
 * {
     margin: 0;
