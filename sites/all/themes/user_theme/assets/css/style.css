@@ -362,7 +362,7 @@ body::-webkit-scrollbar-thumb {
     margin: 0;
 }
 .section-container-content {
-    background-color: #d9d9d9;
+    background-color: var(--bg-gray-color);
     padding: 24px 45px;
 }
 .section-header {
@@ -392,15 +392,13 @@ body::-webkit-scrollbar-thumb {
 }
 /* Section End */
 
-/* Introduce */
+/* Introduce Start */
 .breadcrumbs-container {
     padding-top: 40px;
 }
 .breadcrumbs-inner {
     display: flex;
     flex-direction: row;
-}
-.breadcrumbs-inner li {
 }
 .breadcrumbs-inner li a {
     font-size: 16px;
@@ -436,6 +434,7 @@ body::-webkit-scrollbar-thumb {
 .philosophy-inner {
     margin-top: 32px;
     padding: 0 35px;
+    --bs-gutter-x: 0;
     background-color: var(--bg-secondary-color);
 }
 .philosophy-item {
@@ -473,7 +472,288 @@ body::-webkit-scrollbar-thumb {
 .structure-wrapper-right {
     padding: 48px 32px 0 32px;
 }
-/* Introduce */
+/* Introduce End */
+
+/* Lecturers Start */
+.lecturers-container {
+    margin-top: 36px;
+}
+.lecturers-container-left {
+    padding-right: 24px;
+    margin-bottom: 120px;
+}
+.lecturers-header {
+    background-color: var(--bg-gray-color);
+    padding: 32px 12px;
+    border-bottom: 5px solid var(--bg-secondary-color);
+}
+.lecturers-header-title {
+    font-size: 36px;
+    font-weight: 400;
+}
+.lecturers-content {
+    padding: 20px 0 48px;
+}
+.lecturers-content-item {
+    display: flex;
+    margin-top: 45px;
+}
+.lecturers-content-avatar img {
+    width: 200px;
+    height: 200px;
+}
+.lecturers-content-info {
+    flex: 1;
+    padding-left: 40px;
+}
+.lecturers-content-position {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--secondary-color);
+    display: block;
+}
+.lecturers-content-name {
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 26px;
+}
+.lecturers-content-department {
+    display: block;
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-light-black-color);
+}
+.lecturers-content-email {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+.lecturers-content-email span {
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.lecturers-content-phone {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+.lecturers-content-phone span {
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.lecturers-content-research {
+    display: block;
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: italic;
+    color: var(--text-light-black-color);
+}
+
+.lecturers-container-right {
+    padding-left: 36px;
+    margin-bottom: 120px;
+}
+.lecturers-search-title {
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 24px;
+}
+.lecturers-search-select {
+    width: 100%;
+    padding: 12px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1.3px solid #b8bbc2;
+    border-radius: 8px;
+}
+.lecturers-search-select option:checked {
+    background-color: #c4cbdf;
+}
+.form-select:focus {
+    box-shadow: none;
+    border: 1.3px solid #215aff;
+}
+.lecturers-container-expert {
+    margin: 72px 0 20px;
+}
+.lecturers-expert-title {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.lecturers-expert-item {
+    display: flex;
+    margin-top: 16px;
+}
+.lecturers-expert-avatar {
+    width: 100px;
+    height: 100px;
+    margin-right: 12px;
+}
+.lecturers-expert-info {
+    display: flex;
+    flex-direction: column;
+}
+.lecturers-expert-name {
+    font-weight: 700;
+    font-size: 16px;
+}
+.lecturers-expert-position {
+    font-weight: 400;
+    font-size: 16px;
+}
+.lecturers-expert-research {
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 14px;
+}
+.lecturers-container-faculty {
+    margin-top: 56px;
+    padding: 46px 36px;
+    background-color: var(--primary-color);
+    color: white;
+}
+.lecturers-container-faculty h3,
+.lecturers-container-faculty h4 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 32px;
+}
+.lecturers-container-faculty h4 {
+    margin-bottom: 16px;
+}
+.lecturers-container-faculty span {
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+.lecturers-container-faculty span:nth-child(3),
+.lecturers-container-faculty span:nth-child(5),
+.lecturers-container-faculty span:nth-child(6) {
+    margin-bottom: 26px;
+}
+.lecturers-faculty-social {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 46px;
+}
+.lecturers-faculty-social a {
+    margin-right: 16px;
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+}
+.lecturers-faculty-social i {
+    color: var(--secondary-color);
+    font-size: 20px;
+}
+.lecturers-faculty-btn {
+    display: inline-block;
+    background-color: var(--secondary-color);
+}
+.lecturers-faculty-btn a {
+    display: block;
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    padding: 20px;
+}
+/* Lecturers End */
+
+/* Lecturers Details Start */
+.lecturers-container-statistics {
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    padding: 16px 20px;
+}
+.lecturers-statistics-left-name {
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 4px;
+}
+.lecturers-statistics-position {
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--text-light-black-color);
+    margin-bottom: 20px;
+}
+.lecturers-statistics-research {
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 48px;
+}
+.lecturers-statistics-quantity {
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+}
+.lecturers-statistics-table {
+    display: inline-block;
+    margin-top: 16px;
+}
+.lecturers-statistics-table th {
+    min-width: 120px;
+    padding: 12px 12px;
+    font-size: 18px;
+    color: white;
+    background-color: var(--bg-secondary-color);
+    border: 1px solid var(--bg-secondary-color);
+}
+.lecturers-statistics-table td {
+    padding: 12px 12px;
+    font-size: 18px;
+    color: var(--text-light-black-color);
+    border: 1px solid black;
+}
+.lecturers-statistics-right {
+    padding: 0;
+    display: flex;
+    justify-content: end;
+}
+.lecturers-statistics-container {
+    display: inline-block;
+    background-color: var(--bg-gray-color);
+    padding: 16px 16px 8px;
+}
+.lecturers-statistics-avatar {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 24px;
+}
+.lecturers-statistics-name {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.lecturers-statistics-degree,
+.lecturers-statistics-faculty,
+.lecturers-statistics-department,
+.lecturers-statistics-email,
+.lecturers-statistics-phone {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.lecturers-statistics-email,
+.lecturers-statistics-phone {
+    display: flex;
+    align-items: center;
+}
+.lecturers-statistics-email span {
+    color: var(--secondary-color);
+    margin-left: 10px;
+}
+.lecturers-statistics-phone span {
+    margin-left: 10px;
+}
+/* Lecturers Details End */
+
 /* partner */
 .partner-img {
     width: 200px;
