@@ -123,7 +123,6 @@ body::-webkit-scrollbar-thumb {
 }
 .user-header-top a {
 	color: #fefefe;
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 18px;
 	padding: 6px 12px;
 	text-align: left;
@@ -230,7 +229,7 @@ body::-webkit-scrollbar-thumb {
 	width: 100%;
 	min-height: 1px;
 	margin-top: 30px;
-	padding: 20px 0;
+	padding: 50px 0 30px;
 	color: #fefefe;
 	background-color: var(--primary-color);
 	transition: all 0.5s ease-in-out;
@@ -252,6 +251,13 @@ body::-webkit-scrollbar-thumb {
 .footer-title {
 	padding-bottom: 5px;
 	margin-bottom: 10px;
+}
+.footer-container {
+	width: 90%;
+	margin: 0 auto;
+}
+.footer-child {
+	height: 100%;
 }
 /* Footer */
 /* style */
@@ -349,7 +355,6 @@ body::-webkit-scrollbar-thumb {
 .banner-detail h1 {
 	font-weight: 700;
 	font-size: 70px;
-	font-family: 'Times New Roman', Times, serif;
 }
 /* Banner */
 /* partner */
