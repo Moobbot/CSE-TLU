@@ -45,24 +45,6 @@
                 </div>
                 <div class="right d-flex">
                   <div class="login"><a href="">Đăng nhập</a></div>
-                  <div class="language">
-                    <div class="language-container">
-                      <div class="language-container-inner">
-                        <div class="dropdown">
-                          <a class="btn dropdown-toggle" href="" role="button" id="btn-language"
-                            data-bs-toggle="dropdown" aria-expanded="false"> Ngôn ngữ </a>
-                          <ul class="dropdown-menu" aria-labelledby="btn-language">
-                            <li>
-                              <a class="dropdown-item" href="?vn"><img src="./sites/default/files/vn.png" alt=""></a>
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="?en"><img src="./sites/default/files/eng.png" alt=""></a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                   <div class="contact">
                     <a href="">Liên hệ</a>
                   </div>
@@ -140,11 +122,7 @@
                           </ul>
                         </li>
                       </ul>
-                      <button class="btn-search"><i class="icon-alt fas fa-search"></i></button>
-                      <!-- <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                      </form> -->
+                      <button class="btn-search" id="search-content"><i class="icon-alt fas fa-search"></i></button>
                     </div>
                   </div>
                 </nav>
@@ -153,7 +131,19 @@
           </div>
         </div>
       </header>
-      <div class="main-wrapper">
+      <!-- Search -->
+      <div class="div-search">
+        <div class="div-search-container">
+          <div class="div-search-container-inner">
+            <form class="form-search">
+              <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+              <button class="btn btn-search" type="submit"><i class="icon-alt fas fa-search"></i></button>
+              <button class="btn btn-close"><i class="icon-close far fa-times-circle"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="main-wrapper" style="height: 800px;">
         <div class="main">
           <div class="main-content">
             <div class="main-content-container">

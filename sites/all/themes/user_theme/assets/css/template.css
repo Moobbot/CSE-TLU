@@ -124,7 +124,7 @@ body {
 	line-height: 1.21;
 	background: #ffffff;
 	color: #000000;
-	overflow: hidden;
+	overflow-x: hidden;
 	text-align: justify;
 }
 a {
