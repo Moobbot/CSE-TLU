@@ -513,9 +513,11 @@ body::-webkit-scrollbar-thumb {
     display: block;
 }
 .lecturers-content-name {
+    display: block;
     margin-top: 16px;
     font-weight: 700;
     font-size: 26px;
+    color: black;
 }
 .lecturers-content-department {
     display: block;
@@ -529,10 +531,15 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     margin-top: 16px;
 }
-.lecturers-content-email span {
+.lecturers-content-email a {
+    display: block;
     font-weight: 400;
     font-size: 16px;
     margin-left: 10px;
+    color: black;
+}
+.lecturers-content-email a:hover {
+    text-decoration: underline;
 }
 .lecturers-content-phone {
     display: flex;
@@ -599,6 +606,8 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
 }
 .lecturers-expert-name {
+    display: block;
+    color: black;
     font-weight: 700;
     font-size: 16px;
 }
