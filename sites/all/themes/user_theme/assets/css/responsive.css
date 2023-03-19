@@ -1,8 +1,38 @@
 @media screen and (max-width: 1200px) {
+	.middle-PC {
+		display: none;
+	}
 }
 @media (min-width: 1024px) and (max-width: 1199.8px) {
+	/* .header-top-container {
+		max-width: unset;
+		width: 98%;
+	} */
+	.middle-Tab {
+		display: block !important;
+	}
+	.header-logo .header-title {
+		display: none;
+	}
+	.navbar-container {
+		width: 80%;
+	}
+	.menu-header .navbar-collapse {
+		justify-content: space-between;
+	}
 }
 @media (min-width: 1200px) {
+	.header-logo {
+		width: 500px;
+	}
+	.section-container-content.left {
+		padding-left: 122px;
+		padding-right: 60px;
+	}
+	.section-container-content.right {
+		padding-left: 72px;
+		padding-right: 122px;
+	}
 }
 /* Css for PC only*/
 @media all and (min-width: 992px) {
@@ -67,7 +97,7 @@
 
 @media all and (max-width: 1024px) {
 	.hidden-1024 {
-		display: none;
+		display: none !important;
 	}
 }
 @media all and (min-width: 1024px) and (max-width: 1200px) {
@@ -77,6 +107,7 @@
 
 @media only screen and (min-width: 1024px) and (max-width: 1920px) {
 }
+/* Css for 1024*/
 
 @media all and (min-width: 1280px) {
 }
@@ -103,6 +134,12 @@
 	}
 }
 @media screen and (max-width: 1040px) and (min-width: 992px) {
+	.middle-Tab {
+		display: block !important;
+	}
+	.header-logo .header-title {
+		display: none;
+	}
 }
 /* Css for 1024 - 768 */
 @media screen and (max-width: 1024px) and (min-width: 768px) {
@@ -118,4 +155,9 @@
 /* Css for 992 - 480 */
 /* Css for < 480 */
 @media (max-width: 480px) {
+}
+/* Css for > < 1200 */
+@media (min-width: 1200px) {
+}
+@media (max-width: 1200px) {
 }

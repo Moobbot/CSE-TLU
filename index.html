@@ -34,19 +34,22 @@
   <div class="wrapper">
     <div class="wrapper-container">
       <header id="user-header" class="header">
-        <div class="header-container">
-          <div class="header-container-inner">
+        <div class="user-header-container">
+          <div class="user-header-container-inner">
             <div class="user-header-top hidden-md">
-              <div class="header-top-container container">
+              <div class="header-top-container container-lg">
                 <div class="left d-flex">
                   <div class="div-email"><a href="mailto:vpkcntt@tlu.edu.vn"><i
                         class="icon-envelope far fa-envelope"></i>vpkcntt@tlu.edu.vn</a></div>
                   <div class="div-phone">
-                    <a href="tel:8402435632211"><i class="icon-alt fas fa-phone"></i>(+84)-024 3 5632211</a>
+                    <a href="tel:8402435632211"><i class="icon-alt fas fa-phone"></i>(+84) - 024 3 5632211</a>
                   </div>
                 </div>
-                <div class="middle hidden-1024">
+                <div class="middle middle-PC">
                   <p>Khoa công nghệ thông tin Đại học Thủy Lợi</p>
+                </div>
+                <div class="middle middle-Tab">
+                  <p>CSE - TLU</p>
                 </div>
                 <div class="right d-flex">
                   <div class="login"><a href="">Đăng nhập</a></div>
@@ -55,9 +58,7 @@
                       <div class="language-container-inner">
                         <div class="dropdown">
                           <a class="btn dropdown-toggle" href="" role="button" id="btn-language"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Ngôn ngữ
-                          </a>
+                            data-bs-toggle="dropdown" aria-expanded="false"> Ngôn ngữ </a>
                           <ul class="dropdown-menu" aria-labelledby="btn-language">
                             <li>
                               <a class="dropdown-item" href="?vn"><img src="./sites/default/files/vn.png" alt=""></a>
@@ -77,9 +78,9 @@
               </div>
             </div>
             <div class="user-header-bottom menu-header">
-              <div class="menu-header-container container-xl px-0">
+              <div class="menu-header-container container-lg px-0">
                 <nav class="navbar navbar-expand-lg">
-                  <div class="container-fluid">
+                  <div class="container-fluid navbar-container">
                     <a class="navbar-brand" href="#">
                       <div class="header-logo">
                         <div class="header-logo-img">
@@ -91,32 +92,61 @@
                         </div>
                       </div>
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                      aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navHeader"
+                      aria-controls="navHeader" aria-expanded="false" aria-label="Toggle navigation">
                       <i class="fas fa-bars"></i>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Giới thiệu</a>
+                    <div class="collapse navbar-collapse" id="navHeader">
+                      <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="nD1" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" aria-current="page"> Giới thiệu </a>
+                          <ul class="dropdown-menu" aria-labelledby="nD1">
+                            <li><a class="dropdown-item" href="#">Tổng quan về khoa</a></li>
+                            <li><a class="dropdown-item" href="#">Cơ cấu tổ chức</a></li>
+                            <li><a class="dropdown-item" href="#">Đội ngũ giảng viên</a></li>
+                            <li><a class="dropdown-item" href="#">Liên hệ</a></li>
+                          </ul>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Đào tạo</a>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="nD2" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" aria-current="page"> Đào tạo </a>
+                          <ul class="dropdown-menu" aria-labelledby="nD2">
+                            <li><a class="dropdown-item" href="#">Chương trình đào tạo</a></li>
+                            <li><a class="dropdown-item" href="#">Quy chế đào tạo</a></li>
+                          </ul>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Tuyển sinh</a>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="nD3" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" aria-current="page"> Tuyển sinh </a>
+                          <ul class="dropdown-menu" aria-labelledby="nD3">
+                            <li><a class="dropdown-item" href="#">Đại học</a></li>
+                            <li><a class="dropdown-item" href="#">Thạc sĩ</a></li>
+                            <li><a class="dropdown-item" href="#">Tiến sĩ</a></li>
+                            <li><a class="dropdown-item" href="#">Văn bằng 2</a></li>
+                          </ul>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Doanh nghiệp</a>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="nD4" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" aria-current="page">
+                            Doanh nghiệp
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="nD4">
+                            <li><a class="dropdown-item" href="#">Đối tác</a></li>
+                            <li><a class="dropdown-item" href="#">Thực tập doanh nghiệp</a></li>
+                            <li><a class="dropdown-item" href="#">Việc làm</a></li>
+                          </ul>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Doanh nghiệp</a>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="nD5" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" aria-current="page">
+                            Hợp tác đối ngoại
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="nD5">
+                            <li><a class="dropdown-item" href="#">Chương trình hợp tác</a></li>
+                            <li><a class="dropdown-item" href="#">Đối tác quốc tế</a></li>
+                          </ul>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Hợp tác đối ngoại</a>
-                        </li>
-
                       </ul>
                       <button class="btn-search"><i class="icon-alt fas fa-search"></i></button>
                       <!-- <form class="d-flex">
@@ -130,227 +160,201 @@
             </div>
           </div>
         </div>
-      </header>
-      <div class="main-wrapper">
-        <div class="main">
-          <div class="main-content">
-            <div class="main-content-container">
-              <div class="main-content-container-inner">
-                <div class="banner">
-                  <div class="banner-container">
-                    <div class="banner-container-inner">
-                      <div class="owl-carousel banner-carousel">
-                        <div class="banner-img">
-                          <img src="./sites/default/files/banner/banner1.jpg" alt="" class="">
-                        </div>
-                        <div class="banner-img">
-                          <img src="./sites/default/files/banner/banner2.jpg" alt="" class="">
-                        </div>
+    </div>
+    </header>
+    <div class="main-wrapper">
+      <div class="main">
+        <div class="main-content">
+          <div class="main-content-container">
+            <div class="main-content-container-inner">
+              <div class="banner d-none">
+                <div class="banner-container">
+                  <div class="banner-container-inner">
+                    <div class="owl-carousel banner-carousel">
+                      <div class="banner-img">
+                        <img src="./sites/default/files/banner1.jpg" alt="" class="">
                       </div>
+                      <div class="banner-img">
+                        <img src="./sites/default/files/banner2.jpg" alt="" class="">
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
                     </div>
                   </div>
                 </div>
-                <div class="submenu">
-                  <div class="submenu-container container">
-                    <div class="submenu-container-inner">
-                      <div class="tittle-submenu">
-                        <div class="col-md-3 tittle-submenu-block ">
-                          <a href="#">
-                            <i class="fa-solid fa-school content-tittle-submenu-icon  "></i>
-                          </a>
-                          <a href="#">
-                            <li class="content-tittle-submenu-block">Môi trường giáo dục</li>
-                          </a>
-                        </div>
-                        <div class="col-md-3 tittle-submenu-block ">
-                          <a href="#">
-                            <i class="fa-solid fa-graduation-cap  content-tittle-submenu-icon"></i>
-                          </a>
-                          <a href="#">
-                            <li class="content-tittle-submenu-block">Chương trình đào tạo</li>
-                          </a>
-                        </div>
-                        <div class="col-md-3 tittle-submenu-block ">
-                          <a href="#">
-                            <i class="fa-solid fa-building-columns content-tittle-submenu-icon"></i>
-                          </a>
-                          <a href="#">
-                            <li class="content-tittle-submenu-block">Chương trình đào tạo</li>
-                          </a>
-                        </div>
-                        <div class="col-md-3 tittle-submenu-block ">
-                          <a href="#">
-                            <i class="fa-solid fa-robot  content-tittle-submenu-icon"></i>
-                            <a href="#">
-                              <li class="content-tittle-submenu-block">Nghiên cứu khoa học</li>
-                            </a>
-                        </div>
-                      </div>
-                      <div class="img-submenu">
-                        <img src="./sites/default/files/MQP_8192.jpeg" class="img-cubmenu-content" alt="">
-                      </div>
+              </div>
+              <div class="thongbao_skien my30">
+                <div class="thongbao_skien-container container">
+                  <div class="thongbao_skien-container-inner">
+                    <div class="title-style-1">
+                      <h2>Thông báo & sự kiện</h2>
+                      <hr>
+                    </div>
+                    <div class="thongbao_skien-content">
+                      <ul class="row thongbao_skien-list">
+                        <li class="col-md-4">
+                          <div class="card card-style-1">
+                            <div class="card-body">
+                              <div class="card-time">
+                                <ul>
+                                  <li class="day">01</li>
+                                  <li class="month-year">02/2023</li>
+                                </ul>
+                              </div>
+                              <h5 class="card-title">Thông báo lịch công tác tháng 2 bộ môn trí tuệ nhân tạo</h5>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="col-md-4">
+                          <div class="card card-style-1">
+                            <div class="card-body">
+                              <div class="card-time">
+                                <ul>
+                                  <li class="day">01</li>
+                                  <li class="month-year">02/2023</li>
+                                </ul>
+                              </div>
+                              <h5 class="card-title">Thông báo lịch công tác tháng 2 bộ môn trí tuệ nhân tạo</h5>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="col-md-4">
+                          <div class="card card-style-1">
+                            <div class="card-body">
+                              <div class="card-time">
+                                <ul>
+                                  <li class="day">01</li>
+                                  <li class="month-year">02/2023</li>
+                                </ul>
+                              </div>
+                              <h5 class="card-title">Thông báo lịch công tác tháng 2 bộ môn trí tuệ nhân tạo</h5>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="col-md-4">
+                          <div class="card card-style-1">
+                            <div class="card-body">
+                              <div class="card-time">
+                                <ul>
+                                  <li class="day">01</li>
+                                  <li class="month-year">02/2023</li>
+                                </ul>
+                              </div>
+                              <h5 class="card-title">Thông báo lịch công tác tháng 2 bộ môn trí tuệ nhân tạo</h5>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="col-md-4">
+                          <div class="card card-style-1">
+                            <div class="card-body">
+                              <div class="card-time">
+                                <ul>
+                                  <li class="day">01</li>
+                                  <li class="month-year">02/2023</li>
+                                </ul>
+                              </div>
+                              <h5 class="card-title">Thông báo lịch công tác tháng 2 bộ môn trí tuệ nhân tạo</h5>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="col-md-4">
+                          <div class="card card-style-1">
+                            <div class="card-body">
+                              <div class="card-time">
+                                <ul>
+                                  <li class="day">01</li>
+                                  <li class="month-year">02/2023</li>
+                                </ul>
+                              </div>
+                              <h5 class="card-title">Thông báo lịch công tác tháng 2 bộ môn trí tuệ nhân tạo</h5>
+                            </div>
+                          </div>
+                          <div class="btn-wrap-box">
+                            <a class="btn btn-showmore">Xem thêm <i class="fas fa-arrow-right"></i></a>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
-                <div class="Notification">
-                  <div class="Notification-container container">
-                    <div class="Notification-container-inner">
-                      <div class="title-style">
-                        <h2>Thông báo</h2>
-                        <hr>
-                      </div>
+              </div>
+              <div class="tintuc my30">
+                <div class="tintuc-container container">
+                  <div class="tintuc-container-inner">
+                    <div class="title-style-1">
+                      <h2>Tin tức</h2>
+                      <hr>
+                    </div>
+                    <div class="tintuc-content">
                       <div class="row">
-                        <div class="col-md-6 Notification-left  ">
-                          <div class="notification-block-left">
-                            <div class="notification-content">
-                              <div class="notification-content-img">
-                                <img src="./sites/default/files/anh-tuyen-dung-.jpg" class="notification-img" alt="">
-                              </div>
-                              <div class="notification-content-block ">
-                                <div class="notification-content-left ">
-                                  <li class="day">17</li>
-                                  <li class="month">
-                                    Jan
-                                  </li>
-                                  <hr>
-                                </div>
-                                <div class="notification-content-right ">
-                                  <a href="#" class="tittle-notification">Kết quả thi tiếng anh tăng cường học kỳ 1 măm
-                                    2022
-                                    - 2023</a>
-                                  <div class="file-content">
-                                    <i class="fa-solid fa-file-lines" style="color: rgba(193, 6, 6, 0.8);"></i>
-                                    <li class="file-content-pdf">danhsach.pdf</li>
-                                  </div>
-
+                        <div class="col-md-9">
+                          <div class="left d-flex ">
+                            <div class="left-left col-md-8">
+                              <div class="card card-style-4">
+                                <img src="./sites/default/files/banner1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Công bố Quyết định công nhận Chủ tịch Hội đồng trường khóa
+                                    IV, nhiệm kỳ 2020-2025</h5>
+                                  <p class="card-text">TLU – Hôm nay (10/2), Trường Đại học Thủy lợi tổ chức Lễ công
+                                    bố Quyết định công nhận Chủ tịch Hội đồng trường khóa IV, nhiệm kỳ 2020-2025
+                                    đối...</p>
                                 </div>
                               </div>
                             </div>
-
-                            <div class="notification-content">
-                              <div class="notification-content-img">
-                                <img src="./sites/default/files/anh-tuyen-dung-.jpg" class="notification-img" alt="">
-                              </div>
-                              <div class="notification-content-block ">
-                                <div class="notification-content-left ">
-                                  <li class="day">17</li>
-                                  <li class="month">
-                                    Jan
-                                  </li>
-                                  <hr>
-                                </div>
-                                <div class="notification-content-right ">
-                                  <a href="#" class="tittle-notification">Kết quả thi tiếng anh tăng cường học kỳ 1 măm
-                                    2022
-                                    - 2023</a>
-                                  <div class="file-content">
-                                    <i class="fa-solid fa-file-lines" style="color: rgba(193, 6, 6, 0.8);"></i>
-                                    <li class="file-content-pdf">danhsach.pdf</li>
+                            <div class="left-right col-md-4">
+                              <ul class="flex-column left-right-ul">
+                                <li>
+                                  <div class="card card-style-2 bg-dark text-white">
+                                    <img src="./sites/default/files/MQP_8192.jpeg" class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                      <div class="card-title-wrap">
+                                        <p class="card-title">Trường ĐH Thủy lợi ký kết Biên bản ghi nhớ với Trường
+                                          Isabela State University, Philippines</p>
+                                      </div>
+                                    </div>
                                   </div>
-
-                                </div>
-                              </div>
-                            </div>
-                            <div class="notification-content">
-                              <div class="notification-content-img">
-                                <img src="./sites/default/files/anh-tuyen-dung-.jpg" class="notification-img" alt="">
-                              </div>
-                              <div class="notification-content-block ">
-                                <div class="notification-content-left ">
-                                  <li class="day">17</li>
-                                  <li class="month">
-                                    Jan
-                                  </li>
-                                  <hr>
-                                </div>
-                                <div class="notification-content-right ">
-                                  <a href="#" class="tittle-notification">Kết quả thi tiếng anh tăng cường học kỳ 1 măm
-                                    2022
-                                    - 2023</a>
-                                  <div class="file-content">
-                                    <i class="fa-solid fa-file-lines" style="color: rgba(193, 6, 6, 0.8);"></i>
-                                    <li class="file-content-pdf">danhsach.pdf</li>
+                                </li>
+                                <li style="margin-top: 20px;">
+                                  <div class="card card-style-2 bg-dark text-white">
+                                    <img src="./sites/default/files/MQP_8205.jpeg" class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                      <div class="card-title-wrap">
+                                        <p class="card-title">Trường ĐH Thủy lợi ký kết Biên bản ghi nhớ với Trường
+                                          Isabela State University, Philippines</p>
+                                      </div>
+                                    </div>
                                   </div>
-
-                                </div>
-                              </div>
+                                </li>
+                              </ul>
                             </div>
                           </div>
                         </div>
-                        <div class="col-md-6 Notification-right">
-                          <div class="notification-block-left">
-                            <div class="notification-content">
-                              <div class="notification-content-img">
-                                <img src="./sites/default/files/anh-tuyen-dung-.jpg" class="notification-img" alt="">
-                              </div>
-                              <div class="notification-content-block ">
-                                <div class="notification-content-left ">
-                                  <li class="day">17</li>
-                                  <li class="month">
-                                    Jan
-                                  </li>
-                                  <hr>
-                                </div>
-                                <div class="notification-content-right ">
-                                  <a href="#" class="tittle-notification">Kết quả thi tiếng anh tăng cường học kỳ 1 măm
-                                    2022
-                                    - 2023</a>
-                                  <div class="file-content">
-                                    <i class="fa-solid fa-file-lines" style="color: rgba(193, 6, 6, 0.8);"></i>
-                                    <li class="file-content-pdf">danhsach.pdf</li>
-                                  </div>
-
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="notification-content">
-                              <div class="notification-content-img">
-                                <img src="./sites/default/files/anh-tuyen-dung-.jpg" class="notification-img" alt="">
-                              </div>
-                              <div class="notification-content-block ">
-                                <div class="notification-content-left ">
-                                  <li class="day">17</li>
-                                  <li class="month">
-                                    Jan
-                                  </li>
-                                  <hr>
-                                </div>
-                                <div class="notification-content-right ">
-                                  <a href="#" class="tittle-notification">Kết quả thi tiếng anh tăng cường học kỳ 1 măm
-                                    2022
-                                    - 2023</a>
-                                  <div class="file-content">
-                                    <i class="fa-solid fa-file-lines" style="color: rgba(193, 6, 6, 0.8);"></i>
-                                    <li class="file-content-pdf">danhsach.pdf</li>
-                                  </div>
-
-                                </div>
-                              </div>
-                            </div>
-                            <div class="notification-content">
-                              <div class="notification-content-img">
-                                <img src="./sites/default/files/anh-tuyen-dung-.jpg" class="notification-img" alt="">
-                              </div>
-                              <div class="notification-content-block ">
-                                <div class="notification-content-left ">
-                                  <li class="day">17</li>
-                                  <li class="month">
-                                    Jan
-                                  </li>
-                                  <hr>
-                                </div>
-                                <div class="notification-content-right ">
-                                  <a href="#" class="tittle-notification">Kết quả thi tiếng anh tăng cường học kỳ 1 măm
-                                    2022
-                                    - 2023</a>
-                                  <div class="file-content">
-                                    <i class="fa-solid fa-file-lines" style="color: rgba(193, 6, 6, 0.8);"></i>
-                                    <li class="file-content-pdf">danhsach.pdf</li>
-                                  </div>
-
-                                </div>
-                              </div>
+                        <div class="col-md-3">
+                          <div class="menu-tuyensinh">
+                            <h5 class="head-menu">Tuyển sinh</h5>
+                            <div class="content-menu">
+                              <p class="content-menu-tille">Cấp bậc tuyển sinh</p>
+                              <nav class="content-menu-text nav flex-column">
+                                <a href="">Đại học </a>
+                                <a href="">Thạc sĩ</a>
+                                <a href="">Tiễn sĩ</a>
+                              </nav>
+                              <p class="content-menu-tille">Ngành đào tạo</p>
+                              <nav class="content-menu-text nav flex-column">
+                                <a href="">An ninh mạng</a>
+                                <a href="">Công nghệ thông tin</a>
+                                <a href="">Hệ thống thông tin</a>
+                                <a href="">Công nghệ thông tin</a>
+                                <a href="">Trí tuệ nhân tạo và khoa học dữ liệu </a>
+                              </nav>
                             </div>
                           </div>
                         </div>
@@ -509,68 +513,75 @@
                             </div>
                           </div>
                         </div>
+                        <div class="btn-wrap-tintuc">
+                          <a class="btn btn-showmore">Xem thêm <i class="fas fa-arrow-right"></i></a>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="outstanding-student">
-                  <div class="outstanding-student-container">
-                    <div class="outstanding-student-container-inner">
-                      <div class="card outstanding-student-card " style="max-width: 1440px;">
-                        <div class="row ">
-                          <div class="col-md-5 pe-0">
-                            <img src="./sites/default/files/sinhviennoibat.jpg"
-                              class="img-fluid rounded-start img-outstanding-student" alt="...">
-                          </div>
-                          <div class="col-md-7 card-content-outstanding-student">
-                            <div class="card-body-outstanding-student">
-                              <h5 class="card-title-outstanding-student">Dương Văn Phụng là cựu sinh viên 58PM,
-                              </h5>
-                              <h5 class="card-title-outstanding-student">
-                                Khoa Công nghệ Thông tin,
-                              </h5>
-                              <h5 class="card-title-outstanding-student">
-                                Trường Đại học Thủy lợi</h5>
+                  <div class="outstanding-student">
+                    <div class="outstanding-student-container">
+                      <div class="outstanding-student-container-inner">
+                        <div class="card outstanding-student-card " style="max-width: 1440px;">
+                          <div class="row ">
+                            <div class="col-md-5 pe-0">
+                              <img src="./sites/default/files/sinhviennoibat.jpg"
+                                class="img-fluid rounded-start img-outstanding-student" alt="...">
+                            </div>
+                            <div class="col-md-7 card-content-outstanding-student">
+                              <div class="card-body-outstanding-student">
+                                <h5 class="card-title-outstanding-student">Dương Văn Phụng là cựu sinh viên 58PM,
+                                </h5>
+                                <h5 class="card-title-outstanding-student">
+                                  Khoa Công nghệ Thông tin,
+                                </h5>
+                                <h5 class="card-title-outstanding-student">
+                                  Trường Đại học Thủy lợi</h5>
 
-                              <p class="card-text-outstanding-student">Chia sẻ về quãng thời gian sinh viên, Dương Văn
-                                Phụng
-                                tâm sự mình đã từng tự đặt cho mình danh hiệu “Sinh viên nghiêm túc” vì hầu như mình
-                                chưa
-                                từng đi học muộn, chưa từng bị thầy cô nhắc nhở bởi mình luôn tự ý thức làm bài tập, nộp
-                                bài đúng thời gian quy định. Phụng cũng luôn tập trung trong từng bài giảng và trên hết
-                                là
-                                cảm nhận được sự tâm huyết và tình cảm của các thầy cô trong từng tiết học.</p>
+                                <p class="card-text-outstanding-student">Chia sẻ về quãng thời gian sinh viên, Dương Văn
+                                  Phụng
+                                  tâm sự mình đã từng tự đặt cho mình danh hiệu “Sinh viên nghiêm túc” vì hầu như mình
+                                  chưa
+                                  từng đi học muộn, chưa từng bị thầy cô nhắc nhở bởi mình luôn tự ý thức làm bài tập,
+                                  nộp
+                                  bài đúng thời gian quy định. Phụng cũng luôn tập trung trong từng bài giảng và trên
+                                  hết
+                                  là
+                                  cảm nhận được sự tâm huyết và tình cảm của các thầy cô trong từng tiết học.</p>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="foreign-cooperation">
-                  <div class="foreign-cooperation-container container">
-                    <div class="foreign-cooperation-container-inner row">
-                      <div class="title-style">
-                        <h2>Hợp tác đối ngoại </h2>
-                        <hr>
-                      </div>
-                      <div class="foreign-cooperation-content ">
-                        <ul class="row">
-                          <li class="col-md-3">
-                            <img src="./sites/default/files/samsung.jpg" class="card-img img-foreign-cooperation"
-                              alt="...">
-                          </li>
-                          <li class="col-md-3">
-                            <img src="./sites/default/files/FPT.jpg" class="card-img img-foreign-cooperation" alt="...">
-                          </li>
-                          <li class="col-md-3">
-                            <img src="./sites/default/files/samsung.jpg" class="card-img img-foreign-cooperation"
-                              alt="...">
-                          </li>
-                          <li class="col-md-3">
-                            <img src="./sites/default/files/FPT.jpg" class="card-img img-foreign-cooperation" alt="...">
-                          </li>
-                        </ul>
+                  <div class="foreign-cooperation">
+                    <div class="foreign-cooperation-container container">
+                      <div class="foreign-cooperation-container-inner row">
+                        <div class="title-style">
+                          <h2>Hợp tác đối ngoại </h2>
+                          <hr>
+                        </div>
+                        <div class="foreign-cooperation-content ">
+                          <ul class="row">
+                            <li class="col-md-3">
+                              <img src="./sites/default/files/samsung.jpg" class="card-img img-foreign-cooperation"
+                                alt="...">
+                            </li>
+                            <li class="col-md-3">
+                              <img src="./sites/default/files/FPT.jpg" class="card-img img-foreign-cooperation"
+                                alt="...">
+                            </li>
+                            <li class="col-md-3">
+                              <img src="./sites/default/files/samsung.jpg" class="card-img img-foreign-cooperation"
+                                alt="...">
+                            </li>
+                            <li class="col-md-3">
+                              <img src="./sites/default/files/FPT.jpg" class="card-img img-foreign-cooperation"
+                                alt="...">
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -579,77 +590,82 @@
             </div>
           </div>
         </div>
-      </div>
-      <footer id="footer" class="footer">
-        <div class="footer-container container">
-          <div class="footer-container-inner">
-            <div class="row br-bottom-md">
-              <div class="col-lg-3 px20">
-                <div class="footer-logo footer-title">
-                  <a href=""><img src="./sites/default/files/logo-full-white.png" alt=""></a>
+        <footer id="footer" class="footer">
+          <div class="footer-container container">
+            <div class="footer-container-inner">
+              <div class="row br-bottom-md">
+                <div class="col-lg-3 px20">
+                  <div class="footer-logo footer-title">
+                    <a href=""><img src="./sites/default/files/logo-full-white.png" alt=""></a>
+                  </div>
+                  <div class="br-bottom-xs">
+                    <ul>
+                      <li class="footer-addr">
+                        <a href="https://goo.gl/maps/PWn5CuawF1dYYD9U8" target="_blank">Nhà C1 <br>Đại học Thủy Lợi
+                          <br>175 Tây Sơn, Trung Liệt, Đống Đa, Hà Nội</a>
+                      </li>
+                      <li class="footer-phone">
+                        <a href="tel:(+84)-024 3 5632211">(+84)-024 3 5632211</a>
+                      </li>
+                      <li class="footer-email">
+                        <a href="mailto:vpkcntt@tlu.edu.vn">vpkcntt@tlu.edu.vn</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="br-bottom-xs">
-                  <ul>
-                    <li class="footer-addr">
-                      <a href="https://goo.gl/maps/PWn5CuawF1dYYD9U8" target="_blank">Nhà C1 <br>Đại học Thủy Lợi
-                        <br>175 Tây Sơn, Trung Liệt, Đống Đa, Hà Nội</a>
-                    </li>
-                    <li class="footer-phone">
-                      <a href="tel:(+84)-024 3 5632211">(+84)-024 3 5632211</a>
-                    </li>
-                    <li class="footer-email">
-                      <a href="mailto:vpkcntt@tlu.edu.vn">vpkcntt@tlu.edu.vn</a>
-                    </li>
-                  </ul>
+                <div class="col-lg-3 px20">
+                  <div class="footer-title br-bottom">
+                    <h5>Môi trường giáo dục</h5>
+                  </div>
+                  <div class="footer-detail">
+                    <ul>
+                      <li><a href="">Đào tạo</a></li>
+                      <li><a href="">Mô hình đào tạo</a></li>
+                      <li><a href="">Đào tạo đại học</a></li>
+                      <li><a href="">Định hướng ngành nghề</a></li>
+                      <li><a href="">Đào tạo sau đại học</a></li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <div class="col-lg-3 px20">
-                <div class="footer-title br-bottom">
-                  <h5>Môi trường giáo dục</h5>
+                <div class="col-lg-3 px20">
+                  <div class="footer-title br-bottom">
+                    <h5>Khoa học công nghệ</h5>
+                  </div>
+                  <div class="footer-detail">
+                    <ul>
+                      <li><a href="">Nghiên cứu khoa học</a></li>
+                      <li><a href="">Công trình công bố</a></li>
+                      <li><a href="">Các đề tài, dự án</a></li>
+                      <li><a href="">Các phòng thí nghiệm</a></li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="footer-detail">
-                  <ul>
-                    <li><a href="">Đào tạo</a></li>
-                    <li><a href="">Mô hình đào tạo</a></li>
-                    <li><a href="">Đào tạo đại học</a></li>
-                    <li><a href="">Định hướng ngành nghề</a></li>
-                    <li><a href="">Đào tạo sau đại học</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-3 px20">
-                <div class="footer-title br-bottom">
-                  <h5>Khoa học công nghệ</h5>
-                </div>
-                <div class="footer-detail">
-                  <ul>
-                    <li><a href="">Nghiên cứu khoa học</a></li>
-                    <li><a href="">Công trình công bố</a></li>
-                    <li><a href="">Các đề tài, dự án</a></li>
-                    <li><a href="">Các phòng thí nghiệm</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-3 px20">
-                <div class="footer-title br-bottom">
-                  <h5>Cơ cấu tổ chức</h5>
-                </div>
-                <div class="footer-detail">
-                  <ul>
-                    <li><a href="">Bộ môn Công nghệ phần mềm</a></li>
-                    <li><a href="">Bộ môn Hệ thống thông tin</a></li>
-                    <li><a href="">Bộ môn Mạng và An toàn thông tin</a></li>
-                    <li><a href="">Bộ môn Tin học và Kỹ thuật tính toán</a></li>
-                    <li><a href="">Bộ môn Trí tuệ nhân tạo</a></li>
-                    <li><a href="">Bộ môn Toán học</a></li>
-                  </ul>
+                <div class="col-lg-3 px20">
+                  <div class="footer-title br-bottom">
+                    <h5>Cơ cấu tổ chức</h5>
+                  </div>
+                  <div class="footer-detail">
+                    <ul>
+                      <li><a href="">Bộ môn Công nghệ phần mềm</a></li>
+                      <li><a href="">Bộ môn Hệ thống thông tin</a></li>
+                      <li><a href="">Bộ môn Mạng và An toàn thông tin</a></li>
+                      <li><a href="">Bộ môn Tin học và Kỹ thuật tính toán</a></li>
+                      <li><a href="">Bộ môn Trí tuệ nhân tạo</a></li>
+                      <li><a href="">Bộ môn Toán học</a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-      </footer>
+        </footer>
+      </div>
     </div>
-  </div>
 </body>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.js"></script> -->
+<script src="./sites/all/themes/user_theme/assets/javascript/jquery.min.js"></script>
+<script src="./sites/all/themes/user_theme/assets/plugin/bootstrap/bootstrap-5.0.2/js/bootstrap.js"></script>
+<script src="./sites/all/themes/user_theme/assets/plugin/jquery-ui/jquery-ui.js"></script>
+<script src="./sites/all/themes/user_theme/assets/plugin/OwlCarousel/dist/owl.carousel.min.js"></script>
+<script src="./sites/all/themes/user_theme/assets/javascript/javascript.js"></script>
 
 </html>
