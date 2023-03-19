@@ -25,6 +25,14 @@
 	.header-logo {
 		width: 500px;
 	}
+	.section-container-content.left {
+		padding-left: 122px;
+		padding-right: 60px;
+	}
+	.section-container-content.right {
+		padding-left: 72px;
+		padding-right: 122px;
+	}
 }
 /* Css for PC only*/
 @media all and (min-width: 992px) {

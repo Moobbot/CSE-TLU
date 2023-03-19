@@ -97,11 +97,13 @@
 
 :root {
     --primary-color: #0a1f77;
-    --secondary-color: #c10606;
+    --secondary-color: #c50227;
     --secondary-color-2: rgba(10, 31, 119, 0.8);
     --bg-secondary-color: rgba(193, 6, 6, 0.8);
     --text-light-black-color: rgba(0, 0, 0, 0.8);
-    --bg-gray-color: #d9d9d9;
+    --bg-gray-color: #f2f2f2;
+    --text-breadcrumbs: #a0a0a0;
+    --text-gray-color: #6b6b6b;
     --orange: #ff7300;
 }
 * {
@@ -165,6 +167,7 @@ h6 {
 }
 p {
     padding: 10px 0;
+    line-height: 1.7;
 }
 session,
 nav,

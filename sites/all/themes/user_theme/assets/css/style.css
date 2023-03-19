@@ -357,13 +357,22 @@ body::-webkit-scrollbar-thumb {
 }
 /* Banner */
 
-/* Section Start: Introduce and Admission */
+/* Section Start: Introduce */
 .section-container {
     margin: 0;
+    display: flex;
 }
 .section-container-content {
-    background-color: var(--bg-gray-color);
-    padding: 24px 45px;
+    padding-top: 52px;
+    padding-bottom: 52px;
+}
+.section-container-content.left {
+    padding-left: 72px;
+    padding-right: 60px;
+}
+.section-container-content.right {
+    padding-left: 72px;
+    padding-right: 72px;
 }
 .section-header {
     display: flex;
@@ -376,13 +385,13 @@ body::-webkit-scrollbar-thumb {
     height: 44px;
 }
 .section-title {
-    font-size: 40px;
-    font-weight: 700;
-    margin-left: 12px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 16px;
 }
 .section-paraph {
-    font-size: 18px;
-    color: var(--text-light-black-color);
+    font-size: 17px;
+    color: var(--text-gray-color);
 }
 .section-container-image {
     padding: 0;
@@ -392,7 +401,11 @@ body::-webkit-scrollbar-thumb {
 }
 /* Section End */
 
-/* Introduce Start */
+/* Header Sidebar Start */
+
+/* Header Sidebar End */
+
+/* Breadcrumbs Solid Start */
 .breadcrumbs-container {
     padding-top: 40px;
 }
@@ -401,51 +414,87 @@ body::-webkit-scrollbar-thumb {
     flex-direction: row;
 }
 .breadcrumbs-inner li a {
-    font-size: 16px;
-    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    color: var(--text-breadcrumbs);
 }
 .breadcrumbs-inner li i {
-    margin-right: 10px;
-    margin-left: 8px;
-    color: rgba(0, 0, 0, 0.5);
+    margin-right: 16px;
+    margin-left: 14px;
+    color: var(--text-breadcrumbs);
     font-size: small;
 }
 .breadcrumbs-inner .active {
-    color: var(--primary-color);
-    font-size: 16px;
+    color: var(--secondary-color);
+    font-size: 14px;
 }
+/* Breadcrumbs Solid End */
 
+/* Breadcrumbs Bold Start */
+.breadcrumbs-bold {
+    padding: 18px 24px;
+    background-color: #ededed;
+    border-bottom: 3px solid var(--secondary-color);
+}
+.breadcrumbs-bold-container {
+}
+.breadcrumbs-bold-inner {
+    display: flex;
+    flex-direction: row;
+}
+.breadcrumbs-bold-inner li a {
+    font-size: 14px;
+    color: var(--text-breadcrumbs);
+    font-weight: 700;
+    line-height: 1.7;
+}
+.breadcrumbs-bold-inner li i {
+    margin-right: 16px;
+    margin-left: 14px;
+    color: var(--text-breadcrumbs);
+    font-size: small;
+}
+.breadcrumbs-bold-inner .active {
+    color: var(--secondary-color);
+    font-size: 14px;
+}
+/* Breadcrumbs Bold End */
+
+/* Introduce Start */
 .devel-history-inner {
     padding-top: 40px;
 }
 .devel-history-title {
-    font-size: 40px;
+    font-size: 29px;
     font-weight: 700;
     width: fit-content;
     padding-bottom: 15px;
     border-bottom: var(--secondary-color) 4px solid;
 }
 .devel-history-text {
-    font-size: 20px;
-    color: var(--text-light-black-color);
-    /* text-align: left; */
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text-gray-color);
 }
 
+.philosophy {
+    background-image: url(../../../../../default/files/image/bg-gioi-thieu.jpg);
+    background-size: cover;
+    background-position: center center;
+}
 .philosophy-inner {
-    margin-top: 32px;
-    padding: 0 35px;
+    margin-top: 64px;
     --bs-gutter-x: 0;
-    background-color: var(--bg-secondary-color);
 }
 .philosophy-item {
     display: flex;
     flex-direction: column;
-    padding: 120px 25px;
+    padding: 96px 24px 96px;
 }
 .philosophy-title {
-    font-size: 30px;
+    font-size: 18px;
     color: white;
     font-weight: 700;
+    margin-bottom: 12px;
 }
 .philosophy-paraph {
     font-size: 16px;
@@ -453,26 +502,83 @@ body::-webkit-scrollbar-thumb {
     font-weight: 400;
 }
 
-.structure-item {
-    margin-bottom: 16px;
+.lecturers {
+    background: var(--bg-gray-color);
 }
-.structure-item-title {
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--secondary-color);
-    margin-bottom: 10px;
+
+.training {
+    background: var(--bg-gray-color);
 }
-.structure-item-paraph {
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--text-light-black-color);
-    padding: 0;
-    margin-bottom: 6px;
-}
-.structure-wrapper-right {
-    padding: 48px 32px 0 32px;
+
+.cooperate {
+    background: var(--bg-gray-color);
 }
 /* Introduce End */
+
+/* Structure Start */
+.sidebar {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding-right: 12px;
+}
+.sidebar-content-header {
+    background: linear-gradient(180deg, #93333d , #c40227);
+}
+.sidebar-content-title {
+    display: flex;
+    padding: 80px 24px 8px;
+}
+.sidebar-title-left {
+    border-right: 1px solid white;
+    padding-right: 28px;
+    line-height: 1;
+}
+.sidebar-title-left-day {
+    margin-bottom: 8px;
+    font-size: 27px;
+    font-weight: 700;
+    color: white;
+    line-height: 1;
+
+}
+.sidebar-title-left-month {
+    color: #b1b1b1;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.sidebar-title-right {
+    padding-left: 28px;
+}
+.sidebar-title-right-title {
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    line-height: 1;
+}
+.sidebar-title-right-wrapper {
+    display: flex;
+    color: white;
+    margin-top: 12px;
+}
+.sidebar-title-right-author {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+}
+.sidebar-title-right-category::before {
+    content: "/";
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.sidebar-title-right-ncomment::before {
+    content: "/";
+    margin-left: 12px;
+    margin-right: 12px;
+}
+/* Structure End */
 
 /* Lecturers Start */
 .lecturers-container {
