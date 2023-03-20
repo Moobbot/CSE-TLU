@@ -450,8 +450,6 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--bg-gray);
     border-bottom: 3px solid var(--secondary-color);
 }
-.breadcrumbs-bold-container {
-}
 .breadcrumbs-bold-inner {
     display: flex;
     flex-direction: row;
@@ -622,21 +620,6 @@ body::-webkit-scrollbar-thumb {
 }
 .sidebar-container-right {
     padding-left: 16px;
-}
-.sidebar-recent-post {
-    padding: 18px;
-    border: 1px solid #dedbd1;
-}
-.sidebar-recent-post-title {
-    background-color: var(--bg-gray);
-    padding: 18px 22px;
-    margin-bottom: 28px;
-    border-bottom: 3px solid var(--secondary-color);
-}
-.sidebar-recent-post-title h4 {
-    font-size: 16px;
-    color: #383838;
-    font-weight: 600;
 }
 /* Structure End */
 
@@ -811,30 +794,34 @@ body::-webkit-scrollbar-thumb {
     font-size: 16px;
     color: #666666;
 }
-.sidebar-tags-container {
+.sidebar-recent-post {
+    padding: 18px;
     margin-bottom: 16px;
-    padding: 16px;
     border: 1px solid #dedbd1;
 }
-.sidebar-tags-title {
-    font-weight: 700;
-    font-size: 16px;
-    color: #666666;
+.sidebar-recent-post-title {
+    background-color: var(--bg-gray);
+    padding: 18px 22px;
     margin-bottom: 16px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid #dedbd1;
+    border-bottom: 3px solid var(--secondary-color);
 }
-.sidebar-tags-wrapper {
+.sidebar-recent-post-title h4 {
+    font-size: 16px;
+    color: #383838;
+    font-weight: 600;
+}
+.sidebar-recent-post-wrapper {
     display: flex;
     flex-wrap: wrap;
 }
-.sidebar-tags-item {
+.sidebar-recent-post-item {
     color: #191919;
     margin-right: 4px;
 }
-.sidebar-tags-item:hover {
-    color: #163269;
+.sidebar-recent-post-item:hover {
+    color: var(--secondary-color);
     text-decoration: underline;
+    transition: 0.3s;
 }
 .sidebar-faculty-container {
     padding: 18px;
@@ -1051,6 +1038,38 @@ body::-webkit-scrollbar-thumb {
     display: block;
 }
 /* Lecturers Details End */
+
+/* Admissions Start */
+.sidebar-header-container {
+    padding: 18px 22px;
+    margin-bottom: 28px;
+    background-color: var(--bg-gray);
+    border-bottom: 3px solid var(--secondary-color);
+}
+.sidebar-header-title {
+    font-size: 16px;
+    color: #383838;
+    line-height: 1.7;
+}
+.sidebar-recent-post-content {
+    margin-bottom: 16px;
+}
+.sidebar-content-item a {
+    display: block;
+    padding: 14px 0;
+    font-size: 16px;
+    color: #191919;
+    line-height: 1.7;
+    border-bottom: 1px solid var(--secondary-color);
+}
+.sidebar-content-item a:hover {
+    color: var(--secondary-color);
+    transform: 0.3s;
+}
+.sidebar-content-item a i {
+    margin-right: 8px;
+}
+/* Admissions End */
 
 /* partner */
 .partner-img {
