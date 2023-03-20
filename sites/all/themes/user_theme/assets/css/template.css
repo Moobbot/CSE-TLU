@@ -101,7 +101,8 @@
     --secondary-color-2: rgba(10, 31, 119, 0.8);
     --bg-secondary-color: rgba(193, 6, 6, 0.8);
     --text-light-black-color: rgba(0, 0, 0, 0.8);
-    --bg-gray-color: #f2f2f2;
+    --bg-light-gray: #f2f2f2;
+    --bg-gray: #ededed;
     --text-breadcrumbs: #a0a0a0;
     --text-gray-color: #6b6b6b;
     --orange: #ff7300;
