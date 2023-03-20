@@ -42,6 +42,21 @@ a:focus,
     box-shadow: none;
 }
 
+.button-primary {
+    display: inline-block;
+    background-color: #192f59;
+    padding: 14px 20px;
+}
+.button-primary:hover a {
+    color: white;
+    background-color: #192f59;
+}
+.button-text {
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+}
+
 .button-container {
     display: flex;
     flex-direction: row;
@@ -476,10 +491,8 @@ body::-webkit-scrollbar-thumb {
 /* Breadcrumbs Bold Start */
 .breadcrumbs-bold {
     padding: 18px 24px;
-    background-color: #ededed;
+    background-color: var(--bg-gray);
     border-bottom: 3px solid var(--secondary-color);
-}
-.breadcrumbs-bold-container {
 }
 .breadcrumbs-bold-inner {
     display: flex;
@@ -547,26 +560,29 @@ body::-webkit-scrollbar-thumb {
 }
 
 .lecturers {
-    background: var(--bg-gray-color);
+    background: var(--bg-light-gray);
 }
 
 .training {
-    background: var(--bg-gray-color);
+    background: var(--bg-light-gray);
 }
 
 .cooperate {
-    background: var(--bg-gray-color);
+    background: var(--bg-light-gray);
 }
 /* Introduce End */
 
 /* Structure Start */
-/* .sidebar {
-    margin-top: 60px;
-    margin-bottom: 30px;
-    padding-right: 12px;
-} */
+.sidebar {
+    background-color: var(--bg-light-gray);
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.sidebar-container-content {
+    padding-right: 16px;
+}
 .sidebar-content-header {
-    background: linear-gradient(180deg, #93333d , #c40227);
+    background: linear-gradient(180deg, #93333d, #c40227);
 }
 .sidebar-content-title {
     display: flex;
@@ -583,7 +599,6 @@ body::-webkit-scrollbar-thumb {
     font-weight: 700;
     color: white;
     line-height: 1;
-
 }
 .sidebar-title-left-month {
     color: #b1b1b1;
@@ -622,6 +637,34 @@ body::-webkit-scrollbar-thumb {
     margin-left: 12px;
     margin-right: 12px;
 }
+.structure-container {
+    padding: 52px 24px 32px;
+}
+.structure-container-heading {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+.structure-item > div > p {
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-style: italic;
+}
+.structure-item-title {
+    font-size: 16px;
+    color: var(--text-gray-color);
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.structure-item-avatar {
+    width: 200px;
+}
+.structure-item-paraph {
+    font-size: 16px;
+    color: var(--text-gray-color);
+}
+.sidebar-container-right {
+    padding-left: 16px;
+}
 /* Structure End */
 
 /* Lecturers Start */
@@ -633,7 +676,7 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 120px;
 }
 .lecturers-header {
-    background-color: var(--bg-gray-color);
+    background-color: var(--bg-light-gray);
     padding: 32px 12px;
     border-bottom: 5px solid var(--bg-secondary-color);
 }
@@ -642,15 +685,16 @@ body::-webkit-scrollbar-thumb {
     font-weight: 400;
 }
 .lecturers-content {
-    padding: 20px 0 48px;
+    padding: 32px 0 48px;
 }
 .lecturers-content-item {
     display: flex;
-    margin-top: 45px;
+    margin-bottom: 50px;
+    padding: 0 12px;
 }
 .lecturers-content-avatar img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
 }
 .lecturers-content-info {
     flex: 1;
@@ -658,43 +702,48 @@ body::-webkit-scrollbar-thumb {
 }
 .lecturers-content-position {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 22px;
     color: var(--secondary-color);
     display: block;
+    margin-top: 8px;
 }
 .lecturers-content-name {
     display: block;
     margin-top: 16px;
     font-weight: 700;
-    font-size: 26px;
-    color: black;
+    font-size: 23px;
+    color: #545454;
 }
 .lecturers-content-department {
     display: block;
     margin-top: 4px;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 16px;
-    color: var(--text-light-black-color);
+    color: var(--text-gray-color);
 }
 .lecturers-content-email {
     display: flex;
     align-items: center;
-    margin-top: 16px;
+    margin-top: 24px;
+    color: #545454;
 }
 .lecturers-content-email a {
     display: block;
     font-weight: 400;
     font-size: 16px;
     margin-left: 10px;
-    color: black;
+    color: #545454;
 }
 .lecturers-content-email a:hover {
     text-decoration: underline;
+    color: var(--secondary-color);
 }
 .lecturers-content-phone {
     display: flex;
     align-items: center;
     margin-top: 8px;
+    margin-bottom: 24px;
+    color: #545454;
 }
 .lecturers-content-phone span {
     font-weight: 400;
@@ -703,172 +752,245 @@ body::-webkit-scrollbar-thumb {
 }
 .lecturers-content-research {
     display: block;
-    margin-top: 16px;
     font-weight: 400;
     font-size: 16px;
-    font-style: italic;
     color: var(--text-light-black-color);
 }
 
-.lecturers-container-right {
-    padding-left: 36px;
-    margin-bottom: 120px;
+.lecturers-container-search {
+    border: 1px solid #dedbd1;
+    padding: 18px;
+    margin-bottom: 16px;
 }
 .lecturers-search-title {
     font-weight: 700;
-    font-size: 26px;
+    font-size: 16px;
+    color: #666666;
     margin-bottom: 24px;
 }
+.lecturers-search-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .lecturers-search-select {
-    width: 100%;
+    flex: 1;
     padding: 12px 12px;
-    font-size: 14px;
+    margin-right: 12px;
+    font-size: 13px;
     font-weight: 500;
     border: 1.3px solid #b8bbc2;
     border-radius: 8px;
-}
-.lecturers-search-select option:checked {
-    background-color: #c4cbdf;
 }
 .form-select:focus {
     box-shadow: none;
     border: 1.3px solid #215aff;
 }
 .lecturers-container-expert {
-    margin: 72px 0 20px;
+    margin-bottom: 16px;
+    padding: 16px;
+    border: 1px solid #dedbd1;
 }
 .lecturers-expert-title {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 16px;
+    color: #666666;
     margin-bottom: 8px;
+}
+.lecturers-expert-item:first-child {
+    border-width: 1px 1px 1px 1px;
 }
 .lecturers-expert-item {
     display: flex;
-    margin-top: 16px;
+    padding: 12px;
+    margin-top: 8px;
+    background-color: white;
+    border: 1px solid #e6e6e6;
+    border-width: 0 1px 1px 1px;
 }
-.lecturers-expert-avatar {
+.lecturers-expert-avatar img {
     width: 100px;
-    height: 100px;
-    margin-right: 12px;
 }
 .lecturers-expert-info {
     display: flex;
     flex-direction: column;
+    padding-left: 12px;
 }
 .lecturers-expert-name {
     display: block;
-    color: black;
+    color: #191919;
     font-weight: 700;
     font-size: 16px;
+}
+.lecturers-expert-name:hover {
+    text-decoration: underline;
 }
 .lecturers-expert-position {
     font-weight: 400;
+    color: #666666;
     font-size: 16px;
+    font-style: italic;
+    line-height: 1.7;
 }
 .lecturers-expert-research {
-    margin-top: 12px;
+    margin-top: 8px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
+    color: #666666;
 }
-.lecturers-container-faculty {
-    margin-top: 56px;
-    padding: 46px 36px;
-    background-color: var(--primary-color);
+.sidebar-recent-post {
+    padding: 18px;
+    margin-bottom: 16px;
+    border: 1px solid #dedbd1;
+}
+.sidebar-recent-post-title {
+    background-color: var(--bg-gray);
+    padding: 18px 22px;
+    margin-bottom: 16px;
+    border-bottom: 3px solid var(--secondary-color);
+}
+.sidebar-recent-post-title h4 {
+    font-size: 16px;
+    color: #383838;
+    font-weight: 600;
+}
+.sidebar-recent-post-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.sidebar-recent-post-item {
+    color: #191919;
+    margin-right: 4px;
+}
+.sidebar-recent-post-item:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+    transition: 0.3s;
+}
+.sidebar-faculty-container {
+    padding: 18px;
+    border: 1px solid #dedbd1;
+}
+.sidebar-faculty-inner {
+    padding: 30px 45px;
     color: white;
+    background-color: #1c1b3b;
 }
-.lecturers-container-faculty h3,
-.lecturers-container-faculty h4 {
+.sidebar-faculty-container h3,
+.sidebar-faculty-container h4 {
     font-weight: 700;
     font-size: 20px;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
-.lecturers-container-faculty h4 {
-    margin-bottom: 16px;
+.sidebar-faculty-container h4 {
+    margin-top: 36px;
 }
-.lecturers-container-faculty span {
+.sidebar-faculty-container span {
     display: block;
     font-weight: 400;
-    font-size: 18px;
-    margin-bottom: 16px;
+    font-size: 13px;
+    line-height: 1.7;
 }
-.lecturers-container-faculty span:nth-child(3),
-.lecturers-container-faculty span:nth-child(5),
-.lecturers-container-faculty span:nth-child(6) {
-    margin-bottom: 26px;
+.sidebar-faculty-container span:nth-child(3),
+.sidebar-faculty-container span:nth-child(5),
+.sidebar-faculty-container span:nth-child(6) {
+    margin-bottom: 24px;
 }
-.lecturers-faculty-social {
+.sidebar-faculty-container span:nth-child(6) {
+    font-size: 16px;
+}
+.sidebar-faculty-social {
     display: flex;
     flex-direction: row;
-    margin-bottom: 46px;
+    margin-bottom: 36px;
 }
-.lecturers-faculty-social a {
-    margin-right: 16px;
+.sidebar-faculty-social a {
+    margin-right: 8px;
     padding: 4px 8px;
     display: flex;
     align-items: center;
 }
-.lecturers-faculty-social i {
+.sidebar-faculty-social i {
     color: var(--secondary-color);
-    font-size: 20px;
+    font-size: 19px;
 }
-.lecturers-faculty-btn {
+.sidebar-faculty-btn {
     display: inline-block;
     background-color: var(--secondary-color);
 }
-.lecturers-faculty-btn a {
+.sidebar-faculty-btn a {
     display: block;
     color: white;
-    font-weight: 400;
-    font-size: 24px;
-    padding: 20px;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 22px 28px;
 }
 /* Lecturers End */
 
 /* Lecturers Details Start */
 .lecturers-container-statistics {
-    border: 1px solid rgba(0, 0, 0, 0.6);
-    padding: 16px 20px;
+    display: flex;
+    border: 1px solid #dedbd1;
+    padding: 18px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    background-color: white;
+}
+.lecturers-statistics-left {
+    padding: 0;
 }
 .lecturers-statistics-left-name {
     font-weight: 700;
-    font-size: 26px;
-    margin-bottom: 4px;
+    font-size: 18px;
+    padding: 5px 0 10px;
+    margin-bottom: 20px;
 }
 .lecturers-statistics-position {
     display: block;
     font-weight: 400;
+    font-size: 16px;
+    color: var(--text-gray-color);
+    margin-bottom: 16px;
+}
+.lecturers-statistics-research-title {
+    font-weight: 700;
     font-size: 18px;
-    color: var(--text-light-black-color);
     margin-bottom: 20px;
 }
 .lecturers-statistics-research {
-    display: block;
-    font-weight: 400;
-    font-size: 18px;
-    margin-bottom: 48px;
+    text-indent: 18px;
+    font-size: 14px;
+    color: var(--text-gray-color);
+    line-height: 1.7;
+    padding-bottom: 20px;
 }
 .lecturers-statistics-quantity {
     display: block;
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 22px;
 }
 .lecturers-statistics-table {
     display: inline-block;
     margin-top: 16px;
+    margin-bottom: 0;
 }
 .lecturers-statistics-table th {
     min-width: 120px;
-    padding: 12px 12px;
-    font-size: 18px;
+    padding: 14px;
+    font-size: 16px;
+    text-align: center;
     color: white;
-    background-color: var(--bg-secondary-color);
-    border: 1px solid var(--bg-secondary-color);
+    background-color: var(--secondary-color);
+    border: 1px solid #e6e6e6;
 }
 .lecturers-statistics-table td {
-    padding: 12px 12px;
-    font-size: 18px;
-    color: var(--text-light-black-color);
-    border: 1px solid black;
+    padding: 16px;
+    font-size: 16px;
+    color: #949494;
+    text-align: end;
+}
+.lecturers-statistics-table td:first-child {
+    text-align: start;
 }
 .lecturers-statistics-right {
     padding: 0;
@@ -877,8 +999,10 @@ body::-webkit-scrollbar-thumb {
 }
 .lecturers-statistics-container {
     display: inline-block;
-    background-color: var(--bg-gray-color);
+    background-color: var(--bg-light-gray);
     padding: 16px 16px 8px;
+    height: fit-content;
+    border: 1px solid #dedbd1;
 }
 .lecturers-statistics-avatar {
     width: 200px;
@@ -888,8 +1012,9 @@ body::-webkit-scrollbar-thumb {
 .lecturers-statistics-name {
     display: block;
     font-weight: 700;
-    font-size: 14px;
-    margin-bottom: 8px;
+    font-size: 18px;
+    color: var(--text-gray-color);
+    margin-bottom: 10px;
 }
 .lecturers-statistics-degree,
 .lecturers-statistics-faculty,
@@ -897,6 +1022,7 @@ body::-webkit-scrollbar-thumb {
 .lecturers-statistics-email,
 .lecturers-statistics-phone {
     font-size: 14px;
+    color: var(--text-gray-color);
     margin-bottom: 8px;
 }
 .lecturers-statistics-email,
@@ -904,14 +1030,90 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
 }
-.lecturers-statistics-email span {
-    color: var(--secondary-color);
-    margin-left: 10px;
-}
+.lecturers-statistics-email a,
 .lecturers-statistics-phone span {
     margin-left: 10px;
+    color: var(--text-gray-color);
+}
+.lecturers-statistics-email:hover a {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+.lecturers-menu-wrapper {
+    display: flex;
+    align-items: center;
+}
+.tab {
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+.tab button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: var(--text-light-black-color);
+}
+.tab button:hover {
+    background-color: #ddd;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.tab button.active {
+    color: white;
+    font-size: 16px;
+    background-color: var(--secondary-color);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.tabcontent {
+    display: none;
+    padding: 16px;
+    border: 1px solid #dedbd1;
+    background-color: white;
+}
+.tabcontent h3 {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+#tab1 {
+    display: block;
 }
 /* Lecturers Details End */
+
+/* Admissions Start */
+.sidebar-header-container {
+    padding: 18px 22px;
+    margin-bottom: 28px;
+    background-color: var(--bg-gray);
+    border-bottom: 3px solid var(--secondary-color);
+}
+.sidebar-header-title {
+    font-size: 16px;
+    color: #383838;
+    line-height: 1.7;
+}
+.sidebar-recent-post-content {
+    margin-bottom: 16px;
+}
+.sidebar-content-item a {
+    display: block;
+    padding: 14px 0;
+    font-size: 16px;
+    color: #191919;
+    line-height: 1.7;
+    border-bottom: 1px solid var(--secondary-color);
+}
+.sidebar-content-item a:hover {
+    color: var(--secondary-color);
+    transform: 0.3s;
+}
+.sidebar-content-item a i {
+    margin-right: 8px;
+}
+/* Admissions End */
 
 /* partner */
 .partner-img {
