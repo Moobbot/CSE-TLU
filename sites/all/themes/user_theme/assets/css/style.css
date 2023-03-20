@@ -560,11 +560,11 @@ body::-webkit-scrollbar-thumb {
 /* Introduce End */
 
 /* Structure Start */
-.sidebar {
+/* .sidebar {
     margin-top: 60px;
     margin-bottom: 30px;
     padding-right: 12px;
-}
+} */
 .sidebar-content-header {
     background: linear-gradient(180deg, #93333d , #c40227);
 }
@@ -1034,3 +1034,73 @@ body::-webkit-scrollbar-thumb {
 .notification-card .card-title {
     font-size: 18px;
 }
+/* cong bo khoa hoc */
+
+.main{
+    background-color: #f7f7f7;
+}
+.sidebar-title{
+    margin-top: 60px;
+    border-bottom: 3px solid  var(--secondary-color);
+    background-color: var(--bg-tille);
+}
+.sidebar-title-header{
+    margin-left: 16px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #383838;
+}
+.card-content-img{
+    margin-top: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.card-content-title{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.card-content-title-top{
+    margin-top: 28px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #959595;
+    margin-bottom: 13px;
+}
+.card-content-title-bottom-a{
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #444444;
+}
+/* .card-content-a:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+} */
+/* chi tiet cong bo khoa hoc */
+.sidebar-container-content{
+    margin-top: 30px;
+}
+.structure-container{
+    margin-top: 50px;
+}
+.table-header-title{
+    text-align: center;
+    color: #949494;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.table-header{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #959595;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.table-header-intalic{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #959595;
+    margin-top: 0px;
+    margin-bottom: 20px;
+   font-style: italic;
+}
+
