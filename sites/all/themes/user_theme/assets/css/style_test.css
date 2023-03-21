@@ -1,0 +1,155 @@
+/* block-news */
+
+.news-detail {
+    margin: 30px 0 10px;
+}
+
+
+/* block-news */
+
+
+/* card-news */
+
+.card-news .card-title a {
+    color: #0a0a0a;
+}
+
+.card-news .card-title a:hover,
+.card-news .card-title a:focus {
+    color: var(--secondary-color);
+}
+
+.card-news .card-text {
+    text-align: justify;
+}
+
+
+/* card-news */
+
+.list-news {
+    position: relative;
+    display: flex;
+    margin: 0;
+}
+
+.list-news .list-news-item {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.list-news .list-news-item:last-child,
+.list-news .list-news-item:nth-last-child(2) {
+    margin-bottom: 0;
+}
+
+
+/* card-news-style-1 */
+
+.card-news-style-1 {
+    position: relative;
+    background-clip: border-box;
+    border: none;
+}
+
+
+/* card-news-style-1 */
+
+
+/* card-news-style-2 */
+
+.card-news-style-2 {
+    position: relative;
+    background-clip: border-box;
+    border: none;
+}
+
+.card-news-style-2 a {
+    display: block;
+}
+
+
+/* .card-news-style-2 img {} */
+
+.card-news-style-2 .card-body {
+    padding: 0 10px 10px;
+}
+
+.card-news-style-2 .card-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card-news-style-2 .card-title a {
+    color: var(--primary-color);
+    text-align: left;
+}
+
+
+/* card-news-style-2 */
+
+
+/* notification */
+
+.list-notification {
+    margin: 0;
+    padding: 0;
+}
+
+.notification-card {
+    border: none;
+}
+
+.notification-card .card-body {
+    padding: 0;
+}
+
+.notification-card .card-detail {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.notification-card .card-img {
+    height: 100px;
+}
+
+.notification-card .card-time {
+    display: flex;
+    height: 100%;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.notification-card .card-time ul {
+    padding: 0 5px;
+    margin: 0;
+}
+
+.notification-card .card-time .date {
+    font-size: 30px;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.notification-card .card-time .month {
+    font-size: 26px;
+    color: var(--primary-color);
+    padding-bottom: 5px;
+    border-bottom: 4px solid var(--secondary-color);
+}
+
+.notification-card .card-link {
+    color: var(--secondary-color);
+}
+
+
+/* notification */
+
+.list-notification-item:not(:nth-last-child(2)):not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.notification-card .card-title {
+    font-size: 18px;
+}
