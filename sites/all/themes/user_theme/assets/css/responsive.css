@@ -3,7 +3,9 @@
 		display: none;
 	}
 }
+
 @media (min-width: 1024px) and (max-width: 1199.8px) {
+
 	/* .header-top-container {
 		max-width: unset;
 		width: 98%;
@@ -11,29 +13,30 @@
 	.middle-Tab {
 		display: block !important;
 	}
-	.header-logo .header-title {
-		display: none;
-	}
+
 	.navbar-container {
 		width: 85%;
 	}
+
 	.menu-header .navbar-collapse {
 		justify-content: space-between;
 	}
 }
+
 @media (min-width: 1200px) {
-	.header-logo {
-		width: 500px;
-	}
+
+	/*! Cần sửa  */
 	.section-container-content.left {
-		padding-left: 122px;
+		padding-left : 122px;
 		padding-right: 60px;
 	}
+
 	.section-container-content.right {
-		padding-left: 72px;
+		padding-left : 72px;
 		padding-right: 122px;
 	}
 }
+
 /* Css for PC only*/
 @media all and (min-width: 992px) {
 	.br-bottom-md {
@@ -41,6 +44,7 @@
 		margin-bottom: 10px;
 	}
 }
+
 /* Css for PC only*/
 
 /* Css for Tablet & Mobile*/
@@ -49,49 +53,46 @@
 		display: none !important;
 	}
 }
+
 /* Css for Tablet &  Mobile*/
 
 /* Css for tablet*/
-@media all and (min-width: 768px) and (max-width: 992px) {
-}
+@media all and (min-width: 768px) and (max-width: 992px) {}
+
 /* Css for Mobile*/
-@media (max-width: 767.8px) {
-}
+@media (max-width: 767.8px) {}
+
 /* Css for Mobile*/
 
 /* iPhone 4*/
-@media all and (min-width: 320px) and (max-width: 360px) {
-}
-@media all and (min-width: 320px) and (max-width: 480px) {
-}
+@media all and (min-width: 320px) and (max-width: 360px) {}
+
+@media all and (min-width: 320px) and (max-width: 480px) {}
 
 /* iPhone 5*/
-@media all and (min-width: 320px) and (max-width: 568px) {
-}
+@media all and (min-width: 320px) and (max-width: 568px) {}
 
 /* iPhone 6 */
-@media all and (min-width: 375px) and (max-width: 667px) {
-}
+@media all and (min-width: 375px) and (max-width: 667px) {}
+
 /* iPhone 6 Plus */
-@media all and (min-width: 414px) and (max-width: 736px) {
-}
+@media all and (min-width: 414px) and (max-width: 736px) {}
 
-@media all and (min-width: 500px) and (max-width: 767px) {
-}
-@media (max-width: 767px) {
-}
+@media all and (min-width: 500px) and (max-width: 767px) {}
+
+@media (max-width: 767px) {}
+
 /* Ipad */
-@media all and (min-width: 768px) and (max-width: 992px) {
-}
-@media all and (min-width: 992px) and (max-width: 992px) {
-}
+@media all and (min-width: 768px) and (max-width: 992px) {}
 
-@media all and (min-width: 768px) and (max-width: 1023px) {
-}
+@media all and (min-width: 992px) and (max-width: 992px) {}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {}
+
 @media all and (min-width: 992px) and (max-width: 1023px) {
 }
-@media all and (min-width: 992px) and (max-width: 1200px) {
-}
+
+@media all and (min-width: 992px) and (max-width: 1200px) {}
 
 /* Css for 1024*/
 
@@ -100,31 +101,32 @@
 		display: none !important;
 	}
 }
-@media all and (min-width: 1024px) and (max-width: 1200px) {
-}
-@media all and (min-width: 1024px) and (max-width: 1920px) {
-}
 
-@media only screen and (min-width: 1024px) and (max-width: 1920px) {
-}
+@media all and (min-width: 1024px) and (max-width: 1200px) {}
+
+@media all and (min-width: 1024px) and (max-width: 1920px) {}
+
+@media only screen and (min-width: 1024px) and (max-width: 1920px) {}
+
 /* Css for 1024*/
 
-@media all and (min-width: 1280px) {
-}
+@media all and (min-width: 1280px) {}
+
 /* css mac os */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 768px),
-	not all,
-	not all,
-	not all {
-}
+not all,
+not all,
+not all {}
 
 /* IE10+ CSS styles go here */
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-}
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {}
+
 /* Firefox CSS styles go here */
-@-moz-document url-prefix() {
-}
+@-moz-document url-prefix() {}
+
 @media (max-width: 992px) {
+
 	/* .footer-title.br-bottom {
 		border-color: transparent;
 	} */
@@ -133,31 +135,29 @@
 		margin-bottom: 10px;
 	}
 }
+
 @media screen and (max-width: 1040px) and (min-width: 992px) {
 	.middle-Tab {
 		display: block !important;
 	}
-	.header-logo .header-title {
-		display: none;
-	}
 }
+
 /* Css for 1024 - 768 */
-@media screen and (max-width: 1024px) and (min-width: 768px) {
-}
+@media screen and (max-width: 1024px) and (min-width: 768px) {}
+
 /* Css for 1024 - 768 */
 
 /* Css for Mobile*/
-@media (max-width: 767.8px) {
-}
+@media (max-width: 767.8px) {}
+
 /* Css for 992 - 480 */
-@media all and (min-width: 480px) and (max-width: 992px) {
-}
+@media all and (min-width: 480px) and (max-width: 992px) {}
+
 /* Css for 992 - 480 */
 /* Css for < 480 */
-@media (max-width: 480px) {
-}
+@media (max-width: 480px) {}
+
 /* Css for > < 1200 */
-@media (min-width: 1200px) {
-}
-@media (max-width: 1200px) {
-}
+@media (min-width: 1200px) {}
+
+@media (max-width: 1200px) {}
