@@ -1799,3 +1799,16 @@ body::-webkit-scrollbar-thumb {
 .notification-card .card-title {
   font-size: 18px;
 }
+.icon-row{
+  display: flex;
+  
+}
+.table-title{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  color: #373a3c;
+  font-weight: 600px;
+}
+.check-color{
+  color: #43b968;
+}
