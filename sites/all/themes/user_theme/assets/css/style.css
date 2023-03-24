@@ -1893,8 +1893,6 @@ body::-webkit-scrollbar-thumb {
   padding: 8px 12px;
   background-color: #20b9ae;
 }
-<<<<<<< Updated upstream
-=======
 .icon-row{
   display: flex;
   
@@ -1924,4 +1922,3 @@ height: calc(100% - 73px);
 height: 100%;
 }
 }
->>>>>>> Stashed changes
