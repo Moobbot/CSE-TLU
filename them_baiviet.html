@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./sites/default/files/favicon.ico">
+    <title>Thêm bài viết</title>
+    <link rel="stylesheet"
+        href="./sites/all/themes/user_theme/assets/plugin/bootstrap/bootstrap-5.0.2/css/bootstrap.css">
+    <link rel="stylesheet" href="./sites/all/themes/user_theme/assets/plugin/fontawesome/fontawesome5/css/all.min.css">
+    <link rel="stylesheet" href="./sites/all/themes/user_theme/assets/plugin/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="./sites/all/themes/user_theme/assets/plugin/OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="./sites/all/themes/user_theme/assets/plugin/OwlCarousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./sites/all/themes/user_theme/assets/css/alter.css">
+    <link rel="stylesheet" href="./sites/all/themes/user_theme/assets/css/template.css">
+    <link rel="stylesheet" href="./sites/all/themes/user_theme/assets/css/style.css">
+    <link rel="stylesheet" href="./sites/all/themes/user_theme/assets/css/responsive.css">
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
+</head>
+
+<body>
+    <form>
+        <div class="site-content">
+            <div class="site-content-title">
+                <h3>Thêm thông tin</h3>
+            </div>
+
+            <div class="site-content-main">
+                <div class="site-content-item">
+                    <span class="site-content-item-title"></span>
+                </div>
+                <div class="mb-3 row site-content-item">
+                    <label for="inputNewsId" class="col-sm-2 col-form-label">ID Tin tức:</label>
+                    <div class="col-sm-10">
+                        <input type="text" readonly disabled class="form-control" id="inputNewsId">
+                    </div>
+                </div>
+                <div class="mb-3 row site-content-item">
+                    <label for="inputTitle" class="col-sm-2 col-form-label">Tiêu đề:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputTitle">
+                    </div>
+                </div>
+                <div class="mb-3 row site-content-item">
+                    <label for="inputImage" class="col-sm-2 col-form-label">Ảnh:</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="file" id="inputImage">
+                    </div>
+                </div>
+                <div class="mb-3 row site-content-item">
+                    <label for="editorDesc" class="col-sm-2 col-form-label">Mô tả: </label>
+                    <div class="col-sm-10">
+                        <div id="editorDesc"></div>
+                    </div>
+                </div>
+                <div class="mb-3 row site-content-item">
+                    <label for="editorContent" class="col-sm-2 col-form-label">Nội dung: </label>
+                    <div class="col-sm-10">
+                        <div id="editorContent"></div>
+                    </div>
+                </div>
+                <div class="mb-3 row site-content-item">
+                    <label for="inputCategory" class="col-sm-2 col-form-label">Nhóm tin:</label>
+                    <div class="col-sm-10">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Giới thiệu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-3 row site-content-item">
+                    <label for="inputType" class="col-sm-2 col-form-label">Loại tin:</label>
+                    <div class="col-sm-10">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Tin tức</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-3 row site-content-item">
+                    <label for="inputTag" class="col-sm-2 col-form-label">Tag:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputTag">
+                    </div>
+                </div>
+                <div class="mb-3 row site-content-item">
+                    <label for="inputAuthor" class="col-sm-2 col-form-label">Tác giả:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputAuthor">
+                    </div>
+                </div>
+                <div class="mb-3 row site-content-item">
+                    <label for="inputResourse" class="col-sm-2 col-form-label">Nguồn:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputResourse">
+                    </div>
+                </div>
+                <div class="mb-3 row site-content-item">
+                    <label for="inputStatus" class="col-sm-2 col-form-label form-check-label">Nguồn:</label>
+                    <div class="col-sm-10">
+                        <input class="form-check-input" type="checkbox" value="" id="inputStatus">
+                    </div>
+                </div>
+            </div>
+
+            <div class="site-content-footer">
+                <div class="button-admin">
+                    <a class="button-admin-link" href="#">Lưu lại</a>
+                </div>
+                <div class="button-admin">
+                    <a class="button-admin-link" href="#">Quay lại</a>
+                </div>
+            </div>
+        </div>
+    </for>
+
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#editorDesc'))
+            .then(editor => {
+                console.log(editor);
+            })
+            .catch(error => {
+                console.error(error);
+            });
+        ClassicEditor
+            .create(document.querySelector('#editorContent'))
+            .then(editor => {
+                console.log(editor);
+            })
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+</body>
+
+</html>
