@@ -1,48 +1,16 @@
 @media screen and (max-width: 1200px) {
-	.middle-PC {
-		display: none;
-	}
+
 }
 
 @media (min-width: 1024px) and (max-width: 1199.8px) {
-
-	/* .header-top-container {
-		max-width: unset;
-		width: 98%;
-	} */
-	.middle-Tab {
-		display: block !important;
-	}
-
-	.navbar-container {
-		width: 85%;
-	}
-
-	.menu-header .navbar-collapse {
-		justify-content: space-between;
-	}
 }
 
 @media (min-width: 1200px) {
 
-	/*! Cần sửa  */
-	.section-container-content.left {
-		padding-left : 122px;
-		padding-right: 60px;
-	}
-
-	.section-container-content.right {
-		padding-left : 72px;
-		padding-right: 122px;
-	}
 }
 
 /* Css for PC only*/
 @media all and (min-width: 992px) {
-	.br-bottom-md {
-		border-bottom: 1px solid var(--secondary-color);
-		margin-bottom: 10px;
-	}
 }
 
 /* Css for PC only*/
@@ -124,22 +92,9 @@ not all {}
 /* Firefox CSS styles go here */
 @-moz-document url-prefix() {}
 
-@media (max-width: 992px) {
+@media (max-width: 992px) {}
 
-	/* .footer-title.br-bottom {
-		border-color: transparent;
-	} */
-	.br-bottom-xs {
-		border-bottom: 1px solid var(--secondary-color);
-		margin-bottom: 10px;
-	}
-}
-
-@media screen and (max-width: 1040px) and (min-width: 992px) {
-	.middle-Tab {
-		display: block !important;
-	}
-}
+@media screen and (max-width: 1040px) and (min-width: 992px) {}
 
 /* Css for 1024 - 768 */
 @media screen and (max-width: 1024px) and (min-width: 768px) {}
