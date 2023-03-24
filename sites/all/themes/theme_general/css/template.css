@@ -47,6 +47,8 @@ i {
 
 ol,
 ul {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
@@ -93,6 +95,10 @@ article {
     overflow: hidden;
 }
 
+.hidden{
+    /* display: none !important; */
+    visibility: hidden !important;
+}
 .m-0 {
     margin: 0 !important;
 }
