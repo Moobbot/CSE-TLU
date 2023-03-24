@@ -75,7 +75,7 @@
             // $(this).siblings('.footer-detail').toggleClass('open');
             $(this).siblings(".footer-detail").fadeToggle();
         });
-        // search-content
+        // search-content - start
         $("#search-content").click(function(e) {
             e.preventDefault();
             $(".div-search").addClass("show");
@@ -84,6 +84,7 @@
             e.preventDefault();
             $(".div-search").removeClass("show");
         });
+        // search-content - end
 
         $(window).resize(function() {
             body_width = $("body").width();
