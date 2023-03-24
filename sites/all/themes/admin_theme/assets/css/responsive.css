@@ -1,19 +1,19 @@
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {}
 
-}
+@media (min-width: 1024px) and (max-width: 1199.8px) {}
 
-@media (min-width: 1024px) and (max-width: 1199.8px) {
-}
-
-@media (min-width: 1200px) {
-
-}
+@media (min-width: 1200px) {}
 
 /* Css for PC only*/
-@media all and (min-width: 992px) {
-}
+@media all and (min-width: 992px) {}
 
 /* Css for PC only*/
+
+@media all and (min-width: 768px) {
+	.fixed-footer .footer {
+		margin-left: 220px;
+	}
+}
 
 /* Css for Tablet & Mobile*/
 @media all and (max-width: 991.8px) {
