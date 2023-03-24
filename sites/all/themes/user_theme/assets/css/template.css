@@ -1,5 +1,10 @@
 /**================ Alter of Template ================*/
-
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../font/segoeui/SVN-SegoeUI.woff') format('woff2');
+	font-style: normal;
+	font-display: swap;
+}
 :root {
     --primary-color: #0a1f77;
     --secondary-color: #c50227;
@@ -10,7 +15,6 @@
     --bg-gray: #ededed;
     --text-breadcrumbs: #a0a0a0;
     --text-gray-color: #6b6b6b;
-    --text-color-admin: #373a3c;
     --orange: #ff7300;
     --blue-gray: #192f59;
 }
