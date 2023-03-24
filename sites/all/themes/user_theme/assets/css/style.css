@@ -1727,3 +1727,35 @@ body::-webkit-scrollbar-thumb {
 .notification-card .card-title {
     font-size: 18px;
 }
+<<<<<<< Updated upstream
+=======
+.icon-row{
+  display: flex;
+  
+}
+.table-title{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  color: #373a3c;
+  font-weight: 600px;
+}
+.check-color{
+  color: #43b968;
+}
+/* đăng nhập */
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+>>>>>>> Stashed changes
