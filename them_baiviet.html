@@ -7,19 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./sites/default/files/favicon.ico">
     <title>Thêm bài viết</title>
-    <link rel="stylesheet"
-        href="./sites/all/themes/user_theme/assets/plugin/bootstrap/bootstrap-5.0.2/css/bootstrap.css">
-    <link rel="stylesheet" href="./sites/all/themes/user_theme/assets/plugin/fontawesome/fontawesome5/css/all.min.css">
-    <link rel="stylesheet" href="./sites/all/themes/user_theme/assets/plugin/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="./sites/all/themes/lib/bootstrap/bootstrap-5.0.2/css/bootstrap.css">
+    <link rel="stylesheet" href="./sites/all/themes/lib/fontawesome/fontawesome5/css/all.min.css">
+    <link rel="stylesheet" href="./sites/all/themes/lib/jquery-ui/jquery-ui.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link rel="stylesheet"
-        href="./sites/all/themes/user_theme/assets/plugin/OwlCarousel/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="./sites/all/themes/user_theme/assets/plugin/OwlCarousel/dist/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="./sites/all/themes/user_theme/assets/css/alter.css">
-    <link rel="stylesheet" href="./sites/all/themes/user_theme/assets/css/template.css">
-    <link rel="stylesheet" href="./sites/all/themes/user_theme/assets/css/style.css">
-    <link rel="stylesheet" href="./sites/all/themes/user_theme/assets/css/responsive.css">
+    <link rel="stylesheet" href="./sites/all/themes/lib/OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./sites/all/themes/lib/OwlCarousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./sites/all/themes/admin_theme/assets/css/alter.css">
+    <link rel="stylesheet" href="./sites/all/themes/admin_theme/assets/css/template.css">
+    <link rel="stylesheet" href="./sites/all/themes/admin_theme/assets/css/style.css">
+    <link rel="stylesheet" href="./sites/all/themes/admin_theme/assets/css/responsive.css">
 
     <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
 </head>
@@ -50,7 +47,10 @@
                 <div class="mb-3 row site-content-item">
                     <label for="inputImage" class="col-sm-2 col-form-label">Ảnh:</label>
                     <div class="col-sm-10">
-                        <input class="form-control" type="file" id="inputImage">
+                        <input class="form-control" type="file" id="inputImage" onchange="readURL(this);">
+                    </div>
+                    <div>
+                        <img id="chooseImage" src="" alt="Chọn ảnh">
                     </div>
                 </div>
                 <div class="mb-3 row site-content-item">
@@ -106,8 +106,8 @@
                     </div>
                 </div>
                 <div class="mb-3 row site-content-item">
-                    <label for="inputStatus" class="col-sm-2 col-form-label form-check-label">Nguồn:</label>
-                    <div class="col-sm-10">
+                    <label for="inputStatus" class="col-sm-2 col-form-label form-check-label">Hiển thị:</label>
+                    <div class="col-sm-10 d-flex align-items-center">
                         <input class="form-check-input" type="checkbox" value="" id="inputStatus">
                     </div>
                 </div>
@@ -122,26 +122,26 @@
                 </div>
             </div>
         </div>
-    </for>
+        </for>
 
-    <script>
-        ClassicEditor
-            .create(document.querySelector('#editorDesc'))
-            .then(editor => {
-                console.log(editor);
-            })
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editorContent'))
-            .then(editor => {
-                console.log(editor);
-            })
-            .catch(error => {
-                console.error(error);
-            });
-    </script>
+        <script>
+            ClassicEditor
+                .create(document.querySelector('#editorDesc'))
+                .then(editor => {
+                    console.log(editor);
+                })
+                .catch(error => {
+                    console.error(error);
+                });
+            ClassicEditor
+                .create(document.querySelector('#editorContent'))
+                .then(editor => {
+                    console.log(editor);
+                })
+                .catch(error => {
+                    console.error(error);
+                });
+        </script>
 </body>
 
 </html>
