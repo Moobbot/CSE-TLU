@@ -142,6 +142,9 @@
 
     /*  Popover */
     $('[data-toggle="popover"]').popover();
+    /* Datatable*/
+    $('#example').DataTable();
+    
   });
   $(document).mouseup(function (e) {});
   window.addEventListener("mouseover", function (e) {
