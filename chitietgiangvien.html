@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./sites/default/files/favicon.ico" />
+  <title> Giang vien</title>
+  <!-- General css -->
+  <link rel="stylesheet" href="./sites/all/themes/lib/bootstrap/bootstrap-5.0.2/css/bootstrap.css" />
+  <link rel="stylesheet" href="./sites/all/themes/lib/fontawesome/fontawesome5/css/all.min.css" />
+  <link rel="stylesheet" href="./sites/all/themes/lib/jquery/jquery-ui/jquery-ui.css" />
+  <link rel="stylesheet" href="./sites/all/themes/lib/animate/animate.min.css" />
+  <link rel="stylesheet" href="./sites/all/themes/lib/waves/waves.min.css" />
+  <!-- Admin css -->
+  <link rel="stylesheet" href="./sites/all/themes/lib/bootstrap/datatable/dataTables.bootstrap5.min.css" />
+  <link rel="stylesheet" href="./sites/all/themes/admin_theme/assets/css/template.css" />
+  <link rel="stylesheet" href="./sites/all/themes/admin_theme/assets/css/animations.css" />
+  <link rel="stylesheet" href="./sites/all/themes/admin_theme/assets/css/style.css" />
+  <link rel="stylesheet" href="./sites/all/themes/admin_theme/assets/css/responsive.css" />
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="admin-home fixed-sidebar fixed-header skin-default">
+  <div class="wrapper">
+    <!-- Preloader -->
+    <div class="preloader"></div>
+    <!-- Sidebar -->
+    <div class="site-overlay"></div>
+    <div class="site-sidebar">
+      <div class="custom-scroll custom-scroll-light overflow-auto">
+        <ul class="sidebar-menu">
+          <li class="menu-title">Chức năng chính</li>
+          <li class="with-sub">
+            <a href="?DeTai" class="waves-effect waves-light">
+              <span class="s-caret"><i class="fa fa-angle-down"></i></span>
+              <span class="s-icon"><i class="ti-anchor"></i></span>
+              <span class="s-text">Tin tức</span>
+            </a>
+            <ul>
+              <li><a href="DanhMucTin.aspx">Danh sách tin tức</a></li>
+              <li><a href="TinTuc.aspx">Tin tức</a></li>
+            </ul>
+          </li>
+          <li class="">
+            <a href="?DoiTac" class="waves-effect waves-light">
+              <span class="s-icon"><i class="ti-layout-tab"></i></span>
+              <span class="s-text">Đối tác</span>
+            </a>
+          </li>
+          <li class="with-sub">
+            <a href="?DeTai" class="waves-effect waves-light">
+              <span class="s-caret"><i class="fa fa-angle-down"></i></span>
+              <span class="s-icon"><i class="ti-anchor"></i></span>
+              <span class="s-text">Quản lý</span>
+            </a>
+            <ul>
+              <li><a href="?SlideAnh">Slide ảnh</a></li>
+              <li><a href="?TaiKhoan">Tài khoản</a></li>
+              <li><a href="?Setting">Cấu hình trang</a></li>
+            </ul>
+          </li>
+          <li class="menu-title">Giảng viên</li>
+          <li class="with-sub">
+            <a href="?DeTai" class="waves-effect waves-light">
+              <span class="s-caret"><i class="fa fa-angle-down"></i></span>
+              <span class="s-icon"><i class="ti-package"></i></span>
+              <span class="s-text">Công bố &amp; Đề tài</span>
+            </a>
+            <ul>
+              <li><a href="?CongBo">Công bố</a></li>
+              <li><a href="?DeTai">Đề tài</a></li>
+            </ul>
+          </li>
+          <li class="with-sub">
+            <a href="?DeTai" class="waves-effect waves-light">
+              <span class="s-caret"><i class="fa fa-angle-down"></i></span>
+              <span class="s-icon"><i class="ti-paint-bucket"></i></span>
+              <span class="s-text">Danh mục</span>
+            </a>
+            <ul>
+              <li><a href="?GiangVien">Giảng viên</a></li>
+              <li><a href="?Blogs">Blog giảng viên</a></li>
+              <li><a href="?BoMon">Bộ môn</a></li>
+              <li><a href="?ChucVu">Chức vụ</a></li>
+              <li><a href="?MonHoc">Môn học</a></li>
+              <li><a href="?LinhVuc">Lĩnh vực nghiên cứu</a></li>
+              <li><a href="?XepLoai">Xếp loại nghiên cứu</a></li>
+              <li><a href="?LoaiDeTai">Loại đề tài</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Sidebar second -->
+    <!-- Header -->
+    <header id="admin-header" class="site-header">
+      <div class="admin-header-container">
+        <div class="admin-header-container-inner">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid px-0">
+              <div class="navbar-left">
+                <a class="navbar-brand" href="/TrangChu.aspx">
+                  <div class="logo">
+                    <img src="./sites/default/files/logo/CSE_logo-white.png" alt="logo CSE" class="img-height-fluid">
+                  </div>
+                </a>
+                <div class="toggle-button dark sidebar-toggle-first float-xs-left hidden-md-up">
+                  <span class="hamburger"></span>
+                </div>
+                <div class="toggle-button-second dark float-xs-right hidden-md-up">
+                  <i class="ti-arrow-left"></i>
+                </div>
+                <div class="toggle-button dark float-xs-right hidden-md-up" data-toggle="collapse"
+                  data-target="#collapse-1">
+                  <span class="more"></span>
+                </div>
+              </div>
+              <div class="navbar-right"></div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="main-wrapper">
+      <div class="main">
+        <div class="main-content">
+          <div class="main-content-container">
+            <div class="main-content-container-inner">
+              <!-- Content -->
+              <div class="content-area">
+                <div class="site-content">
+                  <div class="site-content-title ">
+                    <h3>Danh sách giảng viên</h3>
+                    <a href="">
+                      <i class="fas fa-plus"></i>
+                      <Span>
+                        Thêm mới
+                      </Span> </a>
+
+                  </div>
+                  <div class="site-content-content ">
+                    <div class="col-md-2"> <label>Nhóm Giảng Viên:</label></div>
+                    <div class="col-md-10"> <select class="form-select" aria-label="Default select example">
+                        <option class="site-content-menu" selected>Open this select menu</option>
+                        <option value="1">One</option>
+                      </select></div>
+
+                  </div>
+                  <div class="site-content-main">
+                    <table id="example" class="table table-striped" style="width:100%">
+                      <thead>
+                        <tr>
+                          <th class="table-title">Id</th>
+                          <th class="table-title">Tiêu đề</th>
+                          <th class="table-title">Thứ tự</th>
+                          <th class="table-title">Level</th>
+                          <th class="table-title">Link</th>
+                          <th class="table-title">Target</th>
+                          <th class="table-title">Loại</th>
+                          <th class="table-title">Giảng viên phụ trách</th>
+                          <th class="table-title">Chức năng</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Giới thiệu</td>
+                          <td>1</td>
+                          <td>0001</td>
+                          <td>#</td>
+                          <td></td>
+                          <td>1</td>
+                          <td>Cù Việt Dũng</td>
+                          <td>
+                            <div class="icon-row">
+                              <a class="color-green" href="">
+                                <i class="fas fa-eye class-eye"></i>
+                              </a>
+                              <a class="color-blue" href=""> <i class="fas fa-pencil-ruler class-pencil"></i></a>
+                              <a class="color-blue" href=""><i class="fas fa-edit class-edit"></i></a>
+                              <a class="color-red" href=""> <i class="fas fa-trash-alt"></i></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>---- Tổng quan về khoa</td>
+                          <td>1</td>
+                          <td>00010001</td>
+                          <td>GioiThieu.aspx</td>
+                          <td></td>
+                          <td>1</td>
+                          <td>Cù Việt Dũng</td>
+                          <td>
+                            <div class="icon-row">
+                              <a class="color-green" href="">
+                                <i class="fas fa-eye class-eye"></i>
+                              </a>
+                              <a class="color-blue" href=""> <i class="fas fa-pencil-ruler class-pencil"></i></a>
+                              <a class="color-blue" href=""><i class="fas fa-edit class-edit"></i></a>
+                              <a class="color-red" href=""> <i class="fas fa-trash-alt"></i></a>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>3</td>
+                          <td>---- Cơ cấu tổ chức</td>
+                          <td>2</td>
+                          <td>00010002</td>
+                          <td>#</td>
+                          <td></td>
+                          <td>1</td>
+                          <td>Cù Việt Dũng</td>
+                          <td>
+                            <div class="icon-row">
+                              <a class="color-green" href="">
+                                <i class="fas fa-eye class-eye"></i>
+                              </a>
+                              <a class="color-blue" href=""> <i class="fas fa-pencil-ruler class-pencil"></i></a>
+                              <a class="color-blue" href=""><i class="fas fa-edit class-edit"></i></a>
+                              <a class="color-red" href=""> <i class="fas fa-trash-alt"></i></a>
+                            </div>
+
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>Giới thiệu</td>
+                          <td>1</td>
+                          <td>0001</td>
+                          <td>#</td>
+                          <td></td>
+                          <td>1</td>
+                          <td>Cù Việt Dũng</td>
+                          <td>
+                            <div class="icon-row">
+                              <a class="color-green" href="">
+                                <i class="fas fa-eye class-eye"></i>
+                              </a>
+                              <a class="color-blue" href=""> <i class="fas fa-pencil-ruler class-pencil"></i></a>
+                              <a class="color-blue" href=""><i class="fas fa-edit class-edit"></i></a>
+                              <a class="color-red" href=""> <i class="fas fa-trash-alt"></i></a>
+                            </div>
+
+                          </td>
+                        </tr>
+
+
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <td>1</td>
+                          <td>Giới thiệu</td>
+                          <td>1</td>
+                          <td>0001</td>
+                          <td>#</td>
+                          <td></td>
+                          <td>1</td>
+                          <td>Cù Việt Dũng</td>
+                          <td>
+                            <div class="icon-row">
+                              <a class="color-green" href="">
+                                <i class="fas fa-eye class-eye"></i>
+                              </a>
+                              <a class="color-blue" href=""> <i class="fas fa-pencil-ruler class-pencil"></i></a>
+                              <a class="color-blue" href=""><i class="fas fa-edit class-edit"></i></a>
+                              <a class="color-red" href=""> <i class="fas fa-trash-alt"></i></a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+      <div class="footer-container container-fluid">
+        <div class="footer-container-inner">
+          <div class="row text-xs-center">
+            <div class="col-sm-4 text-sm-start mb-5 mb-sm-0">
+              2018 © Khoa Công Nghệ Thông Tin - Đại học Thủy Lợi
+            </div>
+            <div class="col-sm-8 text-sm-end">
+              <ul class="nav nav-inline justify-content-end">
+                <li class="nav-item"><a class="nav-link text-black" href="#">Privacy</a></li>
+                <li class="nav-item"><a class="nav-link text-black" href="#">Terms</a></li>
+                <li class="nav-item"><a class="nav-link text-black" href="#">Help</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.js"></script> -->
+<!-- General js -->
+<script src="./sites/all/themes/lib/jquery/jquery.min.js"></script>
+<script src="./sites/all/themes/lib/jquery/jquery-ui/jquery-ui.js"></script>
+<script src="./sites/all/themes/lib/bootstrap/bootstrap-5.0.2/js/bootstrap.js"></script>
+<script src="./sites/all/themes/lib/detectmobilebrowser/detectmobilebrowser.js"></script>
+<!-- the jquery fullscreen script -->
+<script src="./sites/all/themes/lib/jquery-fullscreen-plugin/jquery.fullscreen-min.js"></script>
+<!-- the waves script -->
+<script src="./sites/all/themes/lib/waves/waves.min.js"></script>
+
+<!-- Admin js -->
+
+<script src="./sites/all/themes/lib/bootstrap/datatable/jquery.dataTables.min.js"></script>
+<script src="./sites/all/themes/lib/bootstrap/datatable/dataTables.bootstrap5.min.js"></script>
+<script src="./sites/all/themes/admin_theme/assets/javascript/javascript.js"></script>
+
+</html>
