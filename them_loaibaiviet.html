@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./sites/default/files/favicon.ico">
-    <title>Thêm bài viết</title>
+    <title>Thêm loại bài viết</title>
     <link rel="stylesheet" href="./sites/all/themes/lib/bootstrap/bootstrap-5.0.2/css/bootstrap.css">
     <link rel="stylesheet" href="./sites/all/themes/lib/fontawesome/fontawesome5/css/all.min.css">
     <link rel="stylesheet" href="./sites/all/themes/lib/jquery-ui/jquery-ui.css">
@@ -33,7 +33,7 @@
                     <span class="site-content-item-title"></span>
                 </div>
                 <div class="mb-3 row site-content-item">
-                    <label for="inputNewsId" class="col-sm-2 col-form-label">ID Bài viết:</label>
+                    <label for="inputNewsId" class="col-sm-2 col-form-label">ID Nhóm bài viết:</label>
                     <div class="col-sm-10">
                         <input type="text" readonly disabled class="form-control" id="inputNewsId">
                     </div>
@@ -45,73 +45,15 @@
                     </div>
                 </div>
                 <div class="mb-3 row site-content-item">
-                    <label for="inputImage" class="col-sm-2 col-form-label">Ảnh:</label>
-                    <div class="col-sm-10">
-                        <input class="form-control" type="file" id="inputImage" onchange="readURL(this);">
-                    </div>
-                </div>
-                <div class="mb-3 row site-content-item">
                     <label for="editorDesc" class="col-sm-2 col-form-label">Mô tả: </label>
                     <div class="col-sm-10">
                         <div id="editorDesc"></div>
                     </div>
                 </div>
                 <div class="mb-3 row site-content-item">
-                    <label for="editorContent" class="col-sm-2 col-form-label">Nội dung: </label>
+                    <label for="inputLevel" class="col-sm-2 col-form-label">Cấp độ:</label>
                     <div class="col-sm-10">
-                        <div id="editorContent"></div>
-                    </div>
-                </div>
-                <div class="mb-3 row site-content-item">
-                    <label for="inputCategory" class="col-sm-2 col-form-label">Nhóm bài viết:</label>
-                    <div class="col-sm-10">
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Giới thiệu</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="mb-3 row site-content-item">
-                    <label for="inputType" class="col-sm-2 col-form-label">Loại bài viết:</label>
-                    <div class="col-sm-10">
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Tin tức</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="mb-3 row site-content-item">
-                    <label for="inputTag" class="col-sm-2 col-form-label">Tag:</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="inputTag">
-                    </div>
-                </div>
-                <div class="mb-3 row site-content-item">
-                    <label for="inputAuthor" class="col-sm-2 col-form-label">Tác giả:</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="inputAuthor">
-                    </div>
-                </div>
-                <div class="mb-3 row site-content-item">
-                    <label for="inputResourse" class="col-sm-2 col-form-label">Nguồn:</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="inputResourse">
-                    </div>
-                </div>
-                <div class="mb-3 row site-content-item">
-                    <label for="inputTimeStart" class="col-sm-2 col-form-label">Thời gian bắt đầu:</label>
-                    <div class="col-sm-10">
-                        <input type="datetime-local" class="form-control" id="inputTimeStart">
-                    </div>
-                </div>
-                <div class="mb-3 row site-content-item">
-                    <label for="inputTimeEnd" class="col-sm-2 col-form-label">Thời gian kết thúc:</label>
-                    <div class="col-sm-10">
-                        <input type="datetime-local" class="form-control" id="inputTimeEnd">
+                        <input type="text" readonly disabled class="form-control" id="inputLevel">
                     </div>
                 </div>
                 <div class="mb-3 row site-content-item">
