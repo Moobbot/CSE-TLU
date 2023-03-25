@@ -28,7 +28,7 @@
 
 	/* sidebar - Layout settings */
 	.compact-sidebar .site-sidebar {
-		width: 70px !important;
+		width: 80px !important;
 	}
 
 	.compact-sidebar .site-sidebar .custom-scroll,
@@ -119,18 +119,52 @@
 
 	/* ===== Header ===== */
 	.site-header .navbar-left {
-		float: left;
-		width: 220px;
+		float     : left;
+		width     : 220px;
+		transition: width 0.2s ease;
 	}
 
 	.compact-sidebar .site-header .navbar-left {
-		width: 70px;
+		width: 80px;
 	}
 
 	.compact-sidebar .site-header .navbar-brand .logo {
-		width             : 50px;
+		width             : 80px;
 		/* background     : url(../img/logo-small.png) no-repeat; */
 		/* background-size: contain; */
+	}
+
+	.site-header .navbar-right {
+		margin-left: 220px;
+		height     : 60px !important;
+	}
+
+	.compact-sidebar .site-header .navbar-right {
+		margin-left: 70px;
+	}
+
+	.site-header .navbar-nav>li>a,
+	.site-header .navbar-nav>li>span {
+		padding-top   : 0;
+		padding-bottom: 0;
+		line-height   : 60px;
+	}
+
+	.site-header .header-form .form-control {
+		width             : 180px;
+		-webkit-transition: all 0.2s ease-in-out;
+		transition        : all 0.2s ease-in-out;
+	}
+
+	.site-header .header-form .form-control:focus {
+		width: 300px;
+	}
+
+	/* navbar */
+
+	.navbar ul>li>a .tag {
+		top        : -12px;
+		margin-left: 0;
 	}
 
 	/* ===== Content ===== */
@@ -153,6 +187,11 @@
 	.hidden-md {
 		display: none !important;
 	}
+
+	/* Header */
+	.site-header .navbar {
+		margin-left: 0 !important;
+	}
 }
 
 /* Css for Tablet &  Mobile*/
@@ -171,6 +210,58 @@
 	.site-sidebar-opened .site-sidebar {
 		left: 0;
 	}
+
+	/* Header */
+	.site-header .navbar .navbar-toggleable-sm {
+		position        : absolute;
+		top             : 60px;
+		left            : 0;
+		right           : 0;
+		padding         : 1rem 2rem;
+		background-color: #fff;
+		border-bottom   : 1px solid #ddd;
+	}
+
+	.site-header .header-form {
+		padding: 0.75rem 0;
+	}
+
+	/* Navbar */
+	.navbar ul>li>a .tag {
+		float: right;
+	}
+
+	/* ... */
+	.navbar .dropdown-menu {
+		position     : static;
+		margin-bottom: 1rem;
+		width        : 100%;
+	}
+
+	.navbar-dark .navbar-nav .nav-link {
+		color: rgba(0, 0, 0, 0.5);
+	}
+
+	.navbar-dark .navbar-nav .nav-link:focus,
+	.navbar-dark .navbar-nav .nav-link:hover {
+		color: rgba(0, 0, 0, 0.9);
+	}
+
+	.navbar-dark .navbar-nav .open>.nav-link,
+	.navbar-dark .navbar-nav .open>.nav-link:focus,
+	.navbar-dark .navbar-nav .open>.nav-link:hover,
+	.navbar-dark .navbar-nav .active>.nav-link,
+	.navbar-dark .navbar-nav .active>.nav-link:focus,
+	.navbar-dark .navbar-nav .active>.nav-link:hover,
+	.navbar-dark .navbar-nav .nav-link.open,
+	.navbar-dark .navbar-nav .nav-link.open:focus,
+	.navbar-dark .navbar-nav .nav-link.open:hover,
+	.navbar-dark .navbar-nav .nav-link.active,
+	.navbar-dark .navbar-nav .nav-link.active:focus,
+	.navbar-dark .navbar-nav .nav-link.active:hover {
+		color: rgba(0, 0, 0, 0.9);
+	}
+
 }
 
 /* Css for Mobile*/

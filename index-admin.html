@@ -101,7 +101,7 @@
       <div class="admin-header-container">
         <div class="admin-header-container-inner">
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid px-0">
+            <div class="w-100">
               <div class="navbar-left">
                 <a class="navbar-brand" href="/TrangChu.aspx">
                   <div class="logo">
@@ -119,7 +119,61 @@
                   <span class="more"></span>
                 </div>
               </div>
-              <div class="navbar-right"></div>
+              <nav class="navbar-right navbar-expand-lg navbar-light bg-light">
+                <div class="w-100 d-flex">
+                  <div class="toggle-button light sidebar-toggle-second float-xs-left hidden-sm-down">
+                    <span class="hamburger"></span>
+                  </div>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-header"
+                    aria-controls="nav-header" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="nav-header">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0">
+                      <li class="nav-item hidden-sm-down">
+                        <a class="nav-link toggle-fullscreen" href="#">
+                          <i class="fas fa-expand-arrows-alt"></i>
+                        </a>
+                      </li>
+                      <li class="nav-link">
+                        <div class="header-form float-md-left">
+                          <form action="">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <button type="submit" class="btn">
+                              <i class="fas fa-search"></i>
+                            </button>
+                          </form>
+                        </div>
+                      </li>
+                    </ul>
+                    <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll float-lg-end">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          <span class="avatar box-32">
+                            <img src="./sites/default/files/image/NguyenNgocDoanh.jpg" alt="" class="img-fluid">
+                          </span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                          <li><a class="dropdown-item" href="#"><i class="far fa-envelope"></i>Inbox</a></li>
+                          <li><a class="dropdown-item" href="#">Profile</a></li>
+                          <li><a class="dropdown-item" href="#">Settings</a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"><i class="fas fa-key"></i> Đổi mật khẩu</a>
+                          </li>
+                          <li>
+                            <a id="usHeader_btnLogout" class="dropdown-item" href="#"><i class="fas fa-power-off"></i>
+                              Đăng xuất</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
             </div>
           </nav>
         </div>
