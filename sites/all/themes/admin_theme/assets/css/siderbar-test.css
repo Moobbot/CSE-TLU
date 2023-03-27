@@ -1,0 +1,193 @@
+
+.site-header .toggle-button-second {
+  width      : 45px;
+  height     : 59px;
+  line-height: 60px;
+  text-align : center;
+  cursor     : pointer;
+}
+
+.site-header .navbar-right .toggle-button-second {
+  margin: 0 -15px 0 15px;
+}
+
+.site-header .toggle-button-second.light {
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+  color      : rgba(0, 0, 0, 0.5);
+}
+
+.site-header .toggle-button-second.dark {
+  border-left: 1px solid rgba(255, 255, 255, 0.125);
+  color      : rgba(255, 255, 255, 0.7);
+}
+
+.site-header .toggle-button-second i {
+  display           : inline-block;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition        : all 0.2s ease-in-out;
+}
+
+.site-header .toggle-button-second.active i {
+  -webkit-transform: rotate(180deg);
+  transform        : rotate(180deg);
+}
+/* xxxxxx */
+
+.site-header .navbar-nav>li .dropdown-toggle::after {
+  display: none;
+}
+
+.site-header .navbar .dropdown-menu {
+  margin-top: -1px;
+}
+
+.site-header .navbar .dropdown-menu.show {
+  left   : unset;
+  right  : 0;
+  top    : 100%;
+  z-index: 10;
+}
+
+/* .site-header .header-form {} */
+
+.site-header .header-form form {
+  position: relative;
+}
+
+.site-header .header-form .btn {
+  position        : absolute;
+  top             : 0;
+  right           : 0;
+  color           : #999;
+  background-color: transparent;
+  border          : none;
+}
+
+.site-header .dropdown-more {
+  display           : block;
+  padding           : 0.75rem 1rem;
+  background-color  : #eee;
+  color             : #999;
+  text-align        : center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition        : all 0.2s ease-in-out;
+}
+
+.site-header .dropdown-more:hover,
+.site-header .dropdown-more:focus {
+  color: #333;
+}
+
+/* Apps */
+.site-header .dropdown-apps {
+  padding  : 0;
+  min-width: 300px;
+}
+
+.site-header .dropdown-apps .a-grid {
+  padding      : 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.site-header .dropdown-apps .a-item {
+  text-align: center;
+}
+
+.site-header .dropdown-apps .a-item a {
+  display           : block;
+  padding           : 1rem 0;
+  color             : rgba(0, 0, 0, 0.5);
+  border            : 1px solid transparent;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition        : all 0.2s ease-in-out;
+}
+
+.site-header .dropdown-apps .a-item a:hover,
+.site-header .dropdown-apps .a-item a:focus {
+  border-color: rgba(0, 0, 0, 0.125);
+  color       : rgba(0, 0, 0, 0.9);
+}
+
+.site-header .dropdown-apps .a-item .ai-icon {
+  margin: 0 auto 1rem auto;
+  width : 32px;
+  height: 32px;
+}
+
+.site-header .dropdown-apps .a-item .ai-title {
+  overflow     : hidden;
+  text-overflow: ellipsis;
+  white-space  : nowrap;
+}
+
+/* Tasks */
+.site-header .dropdown-tasks {
+  padding  : 0;
+  min-width: 300px;
+}
+
+.site-header .dropdown-tasks .t-item {
+  display      : block;
+  padding      : 0.75rem 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.site-header .dropdown-tasks .t-item:last-child {
+  border-bottom: none;
+}
+
+.site-header .dropdown-tasks a.t-item {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition        : all 0.2s ease-in-out;
+}
+
+.site-header .dropdown-tasks .t-item .progress {
+  margin-bottom: 0.5rem;
+}
+
+.site-header .dropdown-tasks .t-item .avatar {
+  margin-right: 0.5rem;
+}
+
+/* Messages */
+.site-header .dropdown-messages {
+  padding  : 0;
+  min-width: 300px;
+}
+
+.site-header .dropdown-messages .m-item {
+  display      : block;
+  position     : relative;
+  padding      : 0.75rem 1rem 0.75rem 4.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.site-header .dropdown-messages .m-item:last-child {
+  border-bottom: none;
+}
+
+.site-header .dropdown-messages .m-item {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition        : all 0.2s ease-in-out;
+}
+
+.site-header .dropdown-messages .m-item .mi-icon {
+  position     : absolute;
+  top          : 15px;
+  left         : 15px;
+  width        : 30px;
+  height       : 30px;
+  line-height  : 30px;
+  font-size    : 0.75rem;
+  text-align   : center;
+  border-radius: 50%;
+}
+
+.site-header .dropdown-messages .m-item .mi-text {
+  color: #999;
+}
+
+.site-header .dropdown-messages .m-item .mi-time {
+  font-size: 90%;
+  color    : #999;
+}
