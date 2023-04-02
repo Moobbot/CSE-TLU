@@ -37,24 +37,24 @@
           <li class="with-sub">
             <a href="?DeTai" class="waves-effect waves-light">
               <span class="s-caret"><i class="fa fa-angle-down"></i></span>
-              <span class="s-icon"><i class="ti-anchor"></i></span>
+              <span class="s-icon"><i class="fas fa-anchor"></i></span>
               <span class="s-text">Tin tức</span>
             </a>
             <ul>
-              <li><a href="DanhMucTin.aspx">Danh mục tin</a></li>
-              <li><a href="TinTuc.aspx">Tin tức</a></li>
+              <li><a href="?DanhMucTin">Danh mục tin</a></li>
+              <li><a href="?TinTuc">Tin tức</a></li>
             </ul>
           </li>
           <li class="">
             <a href="?DoiTac" class="waves-effect waves-light">
-              <span class="s-icon"><i class="ti-layout-tab"></i></span>
+              <span class="s-icon"><i class="fas fa-folder"></i></span>
               <span class="s-text">Đối tác</span>
             </a>
           </li>
           <li class="with-sub">
             <a href="?DeTai" class="waves-effect waves-light">
               <span class="s-caret"><i class="fa fa-angle-down"></i></span>
-              <span class="s-icon"><i class="ti-anchor"></i></span>
+              <span class="s-icon"><i class="fas fa-anchor"></i></span>
               <span class="s-text">Quản lý</span>
             </a>
             <ul>
@@ -67,7 +67,7 @@
           <li class="with-sub">
             <a href="?DeTai" class="waves-effect waves-light">
               <span class="s-caret"><i class="fa fa-angle-down"></i></span>
-              <span class="s-icon"><i class="ti-package"></i></span>
+              <span class="s-icon"><i class="fas fa-cube"></i></span>
               <span class="s-text">Công bố &amp; Đề tài</span>
             </a>
             <ul>
@@ -78,7 +78,7 @@
           <li class="with-sub">
             <a href="?DeTai" class="waves-effect waves-light">
               <span class="s-caret"><i class="fa fa-angle-down"></i></span>
-              <span class="s-icon"><i class="ti-paint-bucket"></i></span>
+              <span class="s-icon"><i class="fas fa-fill-drip"></i></span>
               <span class="s-text">Danh mục</span>
             </a>
             <ul>
@@ -100,26 +100,62 @@
     <header id="admin-header" class="site-header">
       <div class="admin-header-container">
         <div class="admin-header-container-inner">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid px-0">
+          <nav class="navbar navbar-expand-md navbar-light bg-light p-0">
+            <div class="container-fluid px-0 position-relative">
               <div class="navbar-left">
-                <a class="navbar-brand" href="/TrangChu.aspx">
+                <a class="navbar-brand" href="?TrangChu">
                   <div class="logo">
                     <img src="./sites/default/files/logo/CSE_logo-white.png" alt="logo CSE" class="img-height-fluid">
                   </div>
                 </a>
-                <div class="toggle-button dark sidebar-toggle-first float-xs-left hidden-md-up">
+              </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+              </button>
+              <div class="navbar-right collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="toggle-button light sidebar-toggle-second float-xs-left hidden-sm-down">
                   <span class="hamburger"></span>
                 </div>
-                <div class="toggle-button-second dark float-xs-right hidden-md-up">
-                  <i class="ti-arrow-left"></i>
+                <div class="hidden-sm-down">
+                  <a class="nav-link toggle-fullscreen">
+                    <i class="fas fa-expand-arrows-alt"></i>
+                  </a>
                 </div>
-                <div class="toggle-button dark float-xs-right hidden-md-up" data-toggle="collapse"
-                  data-target="#collapse-1">
-                  <span class="more"></span>
+                <div class="div-formsearch">
+                  <form action="" class="d-flex">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <button type="submit" class="btn"><i class="fas fa-search"></i></button>
+                  </form>
                 </div>
+                <ul class="navbar-nav ms-auto mb-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="avatar box-48">
+                        <img src="./sites/default/files/image/NguyenNgocDoanh.jpg" alt="" class="img-fluid">
+                      </span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#"><i class="icon-envelope far fa-envelope"></i>Inbox</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#"><i class="icon-user fas fa-user"></i>Profile</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="icon-cog fas fa-cog"></i>Settings</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"><i class="fas fa-key"></i> Đổi mật khẩu</a>
+                      </li>
+                      <li>
+                        <a id="usHeader_btnLogout" class="dropdown-item" href="#"><i class="fas fa-power-off"></i>
+                          Đăng xuất</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
-              <div class="navbar-right"></div>
             </div>
           </nav>
         </div>
