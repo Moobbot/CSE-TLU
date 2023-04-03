@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./sites/default/files/favicon.ico" />
+  <title>Trang chủ</title>
+  <!-- General css -->
+  <link rel="stylesheet" href="./sites/all/themes/lib/bootstrap/bootstrap-5.0.2/css/bootstrap.css" />
+  <link rel="stylesheet" href="./sites/all/themes/lib/fontawesome/fontawesome5/css/all.min.css" />
+  <link rel="stylesheet" href="./sites/all/themes/lib/jquery/jquery-ui/jquery-ui.css" />
+  <!-- User css -->
+  <link rel="stylesheet" href="./sites/all/themes/lib/OwlCarousel/dist/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./sites/all/themes/lib/OwlCarousel/dist/assets/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="./sites/all/themes/user_theme/assets/css/template.css" />
+  <link rel="stylesheet" href="./sites/all/themes/user_theme/assets/css/style.css" />
+  <link rel="stylesheet" href="./sites/all/themes/user_theme/assets/css/responsive.css" />
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="page-home">
+  <div class="wrapper">
+    <div class="wrapper-container">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.js"></script> -->
+<!-- General js -->
+<script src="./sites/all/themes/lib/jquery/jquery.min.js"></script>
+<script src="./sites/all/themes/lib/bootstrap/bootstrap-5.0.2/js/bootstrap.js"></script>
+<script src="./sites/all/themes/lib/jquery/jquery-ui/jquery-ui.js"></script>
+<!-- User js -->
+<script src="./sites/all/themes/lib/OwlCarousel/dist/owl.carousel.min.js"></script>
+<script src="./sites/all/themes/user_theme/assets/javascript/javascript.js"></script>
+<!-- ! Code add html - Khi cho vô BE thì bỏ -->
+<script>
+  (function ($) {
+    function Once() {
+      var notification_item = $(".notification-list").html();
+      for (i = 0; i < 5; i++)
+        $(".notification-list").append(notification_item);
+      var n_e_item = $(".news-events-list").html();
+      for (i = 0; i < 2; i++) $(".news-events-list").append(n_e_item);
+      Once = function () { };
+    }
+    Once();
+  })(window.jQuery);
+</script>
+
+</html>
